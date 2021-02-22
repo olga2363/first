@@ -221,8 +221,9 @@ margin-right: 5px;
     font-size: 50px;
 }
 .timetable-info> p{
+    text-indent: 20px;
     text-align: left;
-    margin-top: 55px;
+    margin-top: 25px;
     margin-right: 30px;
     letter-spacing: 1px;
     word-spacing: 1px; 
@@ -586,7 +587,7 @@ border: none;
     font-family: 'Caveat', cursive;
     width: 453px;
     height: 500px;
-    right: 53px;
+    right: 2px;
     color: rgb(70, 69, 69);
     font-size: 40px;
     padding: 8px 12px;
@@ -670,33 +671,61 @@ border: none;
     box-sizing: border-box; 
     border-radius: 20px;
 }
+.content-modal-win> span{
+    text-align: justify;
+    text-shadow: none;
+    position: fixed;
+    color: rgb(70, 69, 69);
+    text-indent: 20px;
+}
+
 .content-modal-win-text{
     width: 440px;
     height: 394px;
-    top: 9%;
-    margin-left: -469px;
-    position: fixed;
-    text-shadow: none;
-    color: rgb(0, 0, 2);
-    text-align: justify;
+    top: 10%;
+    left: 190px;
 }
 .content-modal-win-text-two{
-    text-align: justify;
-    height: 150px;
-    width: 480px;
-    position: fixed;
-    margin-left: -1118px;
-    top: 23%;
-    text-shadow: none;
-    color: rgb(0, 0, 2);
+    width: 440px;
+    height: 394px;
+    top: 25%;
+    left: 190px;
 }
-.content-modal-win-text-three{
-    text-align: justify;
+.content-modal-win-text-three {
+    width: 400px;
+    height: 410px;
+    top: 40%;
+    left: 190px;
+}
+
+.content-modal-win-text-four{
+    width: 320px;
+    height: 394px;
+    left: 190px;
+    top: 60%;
+}
+.content-modal-win-text-five{
+    width: 440px;
+    height: 394px;
+    text-indent: 20px;
+    right: 195px;
+    top: 10%;
+}
+.content-modal-win-text-six{
+    width: 440px;
+    height: 394px;
+    right: 195px;
+    top: 20%;
+}
+.content-modal-win-text-seven{
     height: 150px;
-    width: 420px;
-    position: fixed;
-    margin-left: -1114px;
+    width: 450px;
+    right: 195px;
     top: 38%;
-    text-shadow: none;
-    color: rgb(0, 0, 2);
+}
+.content-modal-win-text-eight{
+    height: 150px;
+    width: 440px;
+    right: 195px;
+    top: 50%;
 }
