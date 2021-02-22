@@ -137,7 +137,7 @@ margin-right: 5px;
     width: 100%;
 }
 .dot-item{
-  color: #717171;
+    color:rgb(184, 18, 184);
   border-radius: 50%;
   transition: background-color 40s ease;
   margin-left: 10px;
