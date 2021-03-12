@@ -1,3 +1,38 @@
+/* common */
+ /* modals */
+html {
+    scroll-behavior: smooth;
+}
+.body-scroll-disable{
+    overflow: hidden;
+  }
+ .modalwin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+ }
+ .modal-active{
+     display: block;
+     opacity: 1;
+     pointer-events: all;
+ }
+ /* .modal-slider-content{
+
+ } */
+ .modal-close-btn{
+    font-size: 18px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+ }
+
+
 .wrap{
     display: grid;
     grid-template-columns: 100%;
@@ -238,7 +273,7 @@ border: none;
     outline-style:  none;
 }
 /*модальное окно*/
-.modalwin { 
+.modal-slider{
     height: 700px;  
     width: 1200px;
     top: 5%;
@@ -246,19 +281,23 @@ border: none;
     left: 0;
     font-size: 20px; 
     margin: 0 auto;
-    z-index:9; /* поверх всех */
-    display: none;  /* сначала невидим */
-    position: fixed; /* фиксированное позиционирование, окно стабильно при прокрутке */
-    padding: 15px;
-    border: none;
-   
+    position: fixed;
 }
-#modalwin:target{
-    display: block;}
 
-#shadow { 
+
+
+
+/* .modal-active{
+    opacity: 1;
+    pointer-events: all;
+  } */
+  
+/* #modalwin:target{
+    display: block;} */
+
+/* #shadow { 
     z-index:2; /* поверх всех  кроме окна*/
-    background:rgb(46, 44, 44); 
+    /* background:rgb(46, 44, 44); 
     opacity: 0.2 ;
     left:0;
     top:0;
@@ -266,22 +305,22 @@ border: none;
     height: 100%;
     position: absolute;
     display: flex;
-}
-.content-modal-win> img{
+}  */
+ .modal-slider-container> img{
     height: 100%;
     width: 100%;
     border: 5px solid #eee;
     box-sizing: border-box; 
     border-radius: 20px;
-}
-.content-modal-win> span{
+} 
+.modal-slider-container> span{
     text-align: justify;
     text-shadow: none;
     position: fixed;
     color: rgb(70, 69, 69);
     text-indent: 20px;
     position: absolute;
-}
+} 
 
 .content-modal-win-text{
     width: 440px;
@@ -289,6 +328,7 @@ border: none;
     top: 10%;
     left: 90px;
 }
+
 .content-modal-win-text-two{
     width: 440px;
     height: 394px;
@@ -333,6 +373,18 @@ border: none;
     right: 95px;
     top: 50%;
 }
+/* modal personal */
+.modal-group-content,
+.modal-personal-content{
+    background-color: #eee;
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    top: 20%;
+    text-align: center;
+    padding-top: 70px;
+}
+
 
 /* стили по абонам*/
 .abon{
