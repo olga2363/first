@@ -11,6 +11,7 @@
 	</style>
 	<link rel="stylesheet" href="style/normalize.min.css">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/aos.css">
 	<link href="lightbox/css/lightbox.min.css" rel="stylesheet">
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -50,42 +51,45 @@
 				</div>
 			</div>
 		</div>
-		<div>
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
-					<div class="slide"><img src="foto/IMG_0557 Anna.jpg"></div>
-					<div class="slide-text-one"><p>"Пространство для тренировок, в котором твоё тело станет гибче и сильнее."</p></div>
+		
+		<!-- slider -->
+			<div>
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<div class="slide"><img src="foto/IMG_0557 Anna.jpg"></div>
+						<div class="slide-text-one" data-aos="fade-left"><p>"Пространство для тренировок, в котором твоё тело станет гибче и сильнее."</p></div>
+					</div>
+					
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<div class="slide"><img src="foto/image4.jpeg"></div>
+						<div class="slide-text-two" data-aos="fade-left"><p>"Меня зовут <b>Анна</b></p></div>
+								<div class="slide-text-two-second">
+									<p>и я помогу тебе добиться наилучших результатов!" </p>
+										<button class="button-me" data-aos="zoom-in-up" id="modal-slider-btn">УЗНАТЬ БОЛЬШЕ</button>
+								</div>
+									
+					</div>
+				
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 3</div>
+						<div class="slide"><img src="foto/IMG_0544))).jpg" ></div>
+						<div class="text">Caption Three</div>
+					</div>
+
+				</div>	
+					<button id="prev" onclick="plusSlides(-1)"><img src="foto/prev.png "></button>
+					<button id="next" onclick="plusSlides(1)"><img src="foto/next.png"></button>
+			
+				
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
 				</div>
-				
-				<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
-					<div class="slide"><img src="foto/image4.jpeg"></div>
-					<div class="slide-text-two"><p>"Меня зовут <b>Анна</b></p></div>
-							<div class="slide-text-two-second">
-								<p>и я помогу тебе добиться наилучших результатов!" </p>
-									<button class="button-me" id="modal-slider-btn">УЗНАТЬ БОЛЬШЕ</button>
-							</div>
-								
-				</div>
-			</div>
-				
-				<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
-					<div class="slide"><img src="foto/IMG_0544))).jpg" ></div>
-					<div class="text">Caption Three</div>
-				</div>
-				
-				<button id="prev" onclick="plusSlides(-1)"><img src="foto/prev.png "></button>
-				<button id="next" onclick="plusSlides(1)"><img src="foto/next.png"></button>
-		</div>
-				
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-				<span class="dot" onclick="currentSlide(3)"></span> 
-			</div>
-		</div>
+			</div>	
+		
 			<!--описание тренировок-->
 		<div id="all-trainings"> 
 				<h1 class="description-of-trainings">Описание тренировок</h1> 
@@ -119,8 +123,8 @@
 						<div class="trainings">
 						Функциональная тренировка, направлена на развитие всех двигательных качеств тела. Работа с силой,гибкостью, балансом и выносливостью.
 						25-30 минут длится активная часть и 25-30 растяжка всех мышц. Для этой тренировки, вам понадобятся кроссовки.</div>					
-						<video height="400px" width="600px" style="outline-style: none;" controls preload loop>
-						<source src="video/InShot_20210219_200115916.mp4">
+						<video height="400px" width="600px" style="outline-style:none;" controls preload loop >
+						<source src="video/InShot_20210219_200115916.mp4"></video>
 					</div>
 				</div>
 		</div>
@@ -143,12 +147,12 @@
 		<div id="timetable">
 			<div class="timetable-foto-info">
 				<span>
-					<img src="foto/image7-removebg.png"alt="">
+					<img src="foto/image7-removebg.png" alt="">
 				</span>
 				<span class="timetable-info">
 					<h1>Расписание Занятий</h1>
 					<p>Расписание меняется каждую неделю, по-этому, ты всегда сможешь найти удобное для себя время занятий.</p>
-					<p>Переходи в теллеграм-канал <a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" style="color:  rgb(161, 47, 62); text-decoration: none;" > <em>BODY Stretching</em></a> или звони по номеру<a href="tel: +38 (095) 337 78 56"style="color:  rgb(161, 47, 62); text-decoration: none;" > <em>+38 (095) 337 78 56</em></a> и я расскажу тебе подробней о рассписании.</p>
+					<p>Переходи в теллеграм-канал <a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" style="color:  rgb(161, 47, 62); text-decoration: none;" > <em>BODY Stretching</em></a> или звони по номеру <a href="tel: +38 (095) 337 78 56" style="color:  rgb(161, 47, 62); text-decoration: none;" > <em>+38 (095) 337 78 56</em></a> и я расскажу тебе подробней о рассписании.</p>
 				</span>
 			</div>
 		</div>
@@ -365,5 +369,8 @@
 
 	<script src="js/script.js"></script>
 	<script src="js/slider.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/animation-on-scroll.js"></script>
+	
 </body>
 </html>

@@ -225,7 +225,7 @@ border: none;
     font-family: 'Caveat', cursive;
     width: 453px;
     height: 500px;
-    right: 2px;
+    right: 55px;
     color: rgb(70, 69, 69);
     font-size: 40px;
     padding: 8px 12px;
@@ -689,11 +689,13 @@ to { opacity: 1 }
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 25px;
+    position: relative;
 }
 .training-studio{
     width: 50%;
     margin-top: 25px;
     margin-bottom: 25px;
+    position: relative;
 }
 .studio, .home{
     width: 250px;
