@@ -1,9 +1,13 @@
+const mobileMenu = document.querySelector('#mobile-menu');
+const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
+
 const modalSliderBtn = document.querySelector('#modal-slider-btn');
 const modalPersonalBtn = document.querySelector('#modal-personal-btn');
 const modalPersonal = document.querySelector('#modal-personal');
 const modalSlider = document.querySelector('#modal-slider');
 const modalgGroupBtn = document.querySelector('#modal-group-btn');
 const modalGroup = document.querySelector('#modal-group');
+
 const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
 
 const modalsWrappers = document.querySelectorAll('.modal-area-bgd');
@@ -15,8 +19,8 @@ const BODY_SCROLL_DISABLE_CLASS = 'body-scroll-disable';
 enableCloseModalOnBgdClick();
 hideModalOnMobileMenuElementsClick();
 
-const modals = [modalSlider, modalPersonal, modalGroup];
-const buttons = [modalSliderBtn, modalPersonalBtn, modalgGroupBtn];
+const modals = [mobileMenu, modalSlider, modalPersonal, modalGroup];
+const buttons = [mobileMenuBtn, modalSliderBtn, modalPersonalBtn, modalgGroupBtn];
 
 buttons.forEach((btn, index) => {
     const projectModal = modals[index];
