@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexia body</title>
+	<meta charset="UTF8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		.modalwin{
+			display: none;
+		}
+	</style>
+	<link rel="stylesheet" href="style/normalize.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/aos.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<link href="style/lightbox.min.css" rel="stylesheet">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/500639fc35.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--меню-->
+    <div class="front-page">
+        <div class="container">
+            <nav class="navigation">
+                <div class="zoom stretching-body"><a href="#logo">Body<br>Stretching</a></div>
+
+                <div class="desktop-element list">
+                    <div class="mobile-menu-items zoom">
+                        <a href="#all-trainings">Описание тренировок</a>
+                        <a href="#timetable">Рассписание</a>
+                        <a href="#price-content">Стоимость</a>
+                        <a href="#gallary">Фотогалерея</a>
+                        <a href="#review">Отзывы</a>
+                        <a href="#all-contacts">Как нас найти</a>
+                        <a href="tel: +38 (095) 337 78 56">+38 (095) 337 78 56 - Анна</a>
+                    </div>
+                </div>
+
+                <div class="navigation-part">
+                    <div class="mobile-element tablet-element">
+                        <a href="" class="mobile-menu" id="mobile-menu-btn">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class=" mobile-menu icons">
+                    <section><a href="https://www.facebook.com/stretch.house.7" target="blank"><i class="fab fa-facebook-square"></i></a></section>
+                    <section><a href="https://www.instagram.com/stretching.body/?igshid=1imlp4lmj8wev" target="blank"> <i class="fab fa-instagram-square"></i></a></section>
+                    <section><a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" target="blank"><i class="fab fa-telegram"></i></a></section>
+                </div>
+            </nav>
+        </div>
+			<!-- slider -->
+            <div class="">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">1 / 3</div> -->
+                        <div class="slide"><img src="foto/IMG_0557 Anna.jpg"></div>
+                        <div class="slide-text-one" data-aos="fade-left"><p>"Пространство для тренировок, в котором твоё тело станет гибче и сильнее."</p></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">2 / 3</div> -->
+                        <div class="slide"><img src="foto/image4.jpeg"></div>
+                        <div class="slide-text-two" data-aos="fade-left"><p>"Меня зовут <b>Анна</b></p></div>
+                                <div class="slide-text-two-second">
+                                    <p>и я помогу тебе добиться наилучших результатов!" </p>
+                                        <button class="button-me zoom" id="modal-slider-btn">УЗНАТЬ БОЛЬШЕ</button>
+                                </div>
+                                    
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">3 / 3</div> -->
+                        <div class="slide"><img src="foto/IMG_0544))).jpg" ></div>
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                </div>	
+                    <!-- <button id="prev" class="desktop-element" onclick="plusSlides(-1)"><img src="foto/prev.png "></button>
+                    <button id="next" class="desktop-element" onclick="plusSlides(1)"><img src="foto/next.png"></button>
+             -->
+                
+                <!-- <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div> -->
+            </div>	
+            
+        
+    </div>
+
+
+<!-- MODALS -->
+<div class="modalwin-wrapper">
+    <!-- modal-menu -->
+    <div id="mobile-menu" class="modalwin modal-slider modal-mobile-menu modal-area-bgd" >
+        <div class="modal-mobile-content">
+            <div class="container mobile-menu-container">
+                <i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
+                <nav class="mobile-menu-items">
+                    <a href="#all-trainings">Описание тренировок</a>
+                    <a href="#timetable">Рассписание</a>
+                    <a href="#price-content">Стоимость</a>
+                    <a href="#gallary">Фотогалерея</a>
+                    <a href="#review">Отзывы</a>
+                    <a href="#all-contacts">Как нас найти</a>
+                </nav>
+
+                <div class="mobile-menu-contacts">
+                    <a class="number" href="tel: +38 (095) 337 78 56" >+38 (095) 337 78 56 - Анна</a>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/stretch.house.7" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/stretching.body/?igshid=1imlp4lmj8wev" target="blank"> <i class="fab fa-instagram-square"></i></a>
+                    <a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" target="blank"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal slaider -->
+     <div id="modal-slider" class="modalwin modal-slider modal-area-bgd">
+         <div class="modal-slider-content">
+            <div class="container modal-slider-container">
+                <i class="fas fa-times modal-close-btn modal-slider-close-btn" id=""></i>
+                <img src="foto/IMG_0480)).jpg" width="1300px" alt="">
+                <span class="content-modal-win-text">Меня зовут <b>Анна Лапыгина</b> и я сертифицированый тренер по стретчингу, функциональному, силовому и интервальному тренингу.</span>
+                <span class="content-modal-win-text-two"> Участница Nike Convention 2019, Profit Convention 2020, а так же различных мастер-классов и воркшопов.
+                    Так же прошла обучающий курс по нутриционному сопровождению: контроль, снижение и набор массы тела.</span>
+                <span class="content-modal-win-text-three">Имею международную сертификацию по фасциальному тренингу и стретчингу, а так же по фасциальной ходьбе(Concept-Rossmann - Германия).</span>
+                <span class="content-modal-win-text-four">Имею опыт работы более 3-х лет и как знают мои клиенты - я очень люблю свою работу. </span> 
+                <span class="content-modal-win-text-five">В сфере спорта я уже 10 лет,но ещё в детстве узнала что такое растяжка и шпагат.</span> 
+                <span class="content-modal-win-text-six">С 15-ти летнего возраста начала активно заниматься спортом: тренажёрный зал, аэробика, осваивала разные направления фитнеса и уже в 18 лет работала фитнес-тренером.</span> 
+                <span class="content-modal-win-text-seven">Так же занималась различными танцевальными направлениями и я уверена,что наше тело создано для того чтобы двигаться! </span>
+                <span class="content-modal-win-text-eight">Правильное движение даёт энергию, а энергия - ещё больше движения!</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal-personal -->
+    <div class="modalwin modal-personal modal-area-bgd" id="modal-personal">
+        <div class="modal-personal-content">
+            <i class="fas fa-times modal-close-btn modal-personal-close-btn" id=""></i>
+                <p>Результативность персональных занятий очень высока, поскольку всё внимание тренер уделяем исключительно Вам. Это индивидуальный подход и составление плана тренировок под ваши цели и ваши  особенности.
+                На занятиях стретчингом, одним из методов является - пассивный стретчинг, при котором тренерующийся может максимумально расслабиться и получить самый лучший результат от растяжки. 
+                На функциональных занятиях работаем комплексно над всем телом, при этом делая акцент на ваши самые " проблемные" зоны. 
+                Персональные занятия проходят по индивидуальному графику, который вы лично составляете с тренером. Узнать стоимость можно здесь.</p>
+        </div>
+    </div>
+    <!-- modal-group -->
+    <div class="modalwin modal-group modal-area-bgd" id="modal-group">
+        <div class="modal-group-content">
+            <i class="fas fa-times modal-close-btn modal-group-close-btn" id=""></i>
+                <p>Результативность персональных занятий очень высока, поскольку всё внимание тренер уделяем исключительно Вам. Это индивидуальный подход и составление плана тренировок под ваши цели и ваши  особенности. На занятиях стретчингом, одним из методов является - пассивный стретчинг, при котором тренерующийся может максимумально расслабиться и получить самый лучший результат от растяжки. На функциональных занятиях работаем комплексно над всем телом, при этом делая акцент на ваши самые " проблемные" зоны. Персональные занятия проходят по индивидуальному графику, который вы лично составляете с тренером. Узнать стоимость можно здесь.</p>
+        </div>
+    </div>
+
+
+</div>
+
+	<script src="js/script.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/animation-on-scroll.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper.js"></script>
+	
+</body>
+</html>
