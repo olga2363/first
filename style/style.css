@@ -698,53 +698,49 @@ to { opacity: 1 }
 }
 
 /* стоимость абоабонов*/
-.abon{
-    display: flex;
-    justify-content: space-around;
-}
 
-#price-content{
-    height: 800px;
-    margin: 100px 100px 155px 100px;
+.wrap-personal,
+.wrap-split,
+.wrap-group
+{
+    border-width: 5px;
+    border-radius: 20px;
+    border: 7px solid #eee;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px; 
+    text-align: center;
+    box-sizing: border-box;
     text-align: center;
 }
-.wrap-personal{
-    border-style: ridge;
-    height: 300px;
-    width: 400px;
+/* .wrap-split{
     border-width: 5px;
     border-radius: 20px;
     border: 7px solid #eee;
-    box-sizing: border-box;  
-}
-.wrap-split{
-    border-style: ridge;
-    height: 300px;
-    width: 400px;
-    border-width: 5px;
-    border-radius: 20px;
-    border: 7px solid #eee;
-    box-sizing: border-box;  
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;   
 }
 .wrap-group{
-    margin: 0px 10px 0px 10px;
-    border-style: ridge;
-    height: 367px;
-    width: 400px;
     border-width: 5px;
     border-radius: 20px;
     border: 7px solid #eee;
-    box-sizing: border-box;  
-}
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;    
+} */
 
 
-.price-abon{
-    width: 450px;
-    height: 400px;
-}
-.price-abon>img{
+
+/* .price-abon>img{
     width: 100%;
-}
+} */
 .dot-item{
   color: rgb(161, 47, 62);
   border-radius: 50%;
@@ -764,9 +760,6 @@ to { opacity: 1 }
 .one-trainings{
    border-style: ridge;
     border-width: 5px;
-    height: 220px;
-    width: 601px;
-    margin-left: 310px;
     border-radius: 20px;
     border: 7px solid #eee;
     box-sizing: border-box;
@@ -774,20 +767,20 @@ to { opacity: 1 }
     margin-bottom: 70px;
     letter-spacing: 1.5px;
     word-spacing: 1.5px; 
-    font-size: 25px;
+    font-size: 17px;
     font-family: sans-serif;
     justify-content: center;
 }
 .dot-item> p{
     text-align: left;
     box-sizing: border-box;
-    font-size: 25px;
+    font-size: 17px;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-family: sans-serif;
-    line-height: 45px;
+    /* line-height: 45px; */
     color:var(--txt-c-dark-grey);
 }
 .wrap-personal> h3,
@@ -1398,6 +1391,20 @@ font-size: 110%;
     
 
         /* price */
+        .abon{
+        display: flex;
+        justify-content: space-around;
+        }
+
+        #price-content{
+            height: 800px;
+            margin: 100px 100px 155px 100px;
+            text-align: center;
+        }
+        .price-abon{
+            width: 450px;
+            height: 400px;
+        }
         .price{
             font-family: var(--font-main);
             color:rgb(50, 52, 60); 
@@ -1406,9 +1413,78 @@ font-size: 110%;
             margin-bottom: 50px;
             font-size: 50px;
         }
+        .wrap-personal{
+            border-style: ridge;
+            height: 300px;
+            width: 400px;
+            border-width: 5px;
+            border-radius: 20px;
+            border: 7px solid #eee;
+            box-sizing: border-box;  
+        }
+        .wrap-split{
+            border-style: ridge;
+            height: 300px;
+            width: 400px;
+            border-width: 5px;
+            border-radius: 20px;
+            border: 7px solid #eee;
+            box-sizing: border-box;  
+        }
+        .wrap-group{
+            margin: 0px 10px 0px 10px;
+            border-style: ridge;
+            height: 367px;
+            width: 400px;
+            border-width: 5px;
+            border-radius: 20px;
+            border: 7px solid #eee;
+            box-sizing: border-box;  
+        }
 
-
-
-
+        .one-trainings{
+            border-style: ridge;
+             border-width: 5px;
+             /* height: 220px;
+             width: 601px; */
+             border-radius: 20px;
+             border: 7px solid #eee;
+             box-sizing: border-box;
+             text-align: center;
+             margin-bottom: 70px;
+             letter-spacing: 1.5px;
+             word-spacing: 1.5px; 
+             font-size: 25px;
+             font-family: sans-serif;
+             justify-content: center;
+         }
+         .wrap-personal> h3,
+         .wrap-group> h3,
+         .wrap-split> h3{
+             text-align:center ;
+             box-sizing: border-box;
+             color:var(--txt-c-dark-grey); 
+             font-size: 35px;
+             letter-spacing: 1.5px;
+             word-spacing: 1.5px;
+         }
+         .price-abon> p{
+             text-align: left;
+             box-sizing: border-box;
+             font-size: 25px;
+             letter-spacing: 1.5px;
+             word-spacing: 1.5px;
+             margin-top: 5px;
+             margin-bottom: 5px;
+             font-family: sans-serif;
+             line-height: 45px;
+         }
+         .dot-item{
+            margin-left: 10px;
+        }
+        .dot-item> p{
+            font-size: 25px;
+            line-height: 45px;
+        }
 
         }
