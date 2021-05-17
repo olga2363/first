@@ -37,13 +37,6 @@
     display: block !important;
   }
 
-.swiper-container {
-    /* margin-left: 100px;
-    margin-right: 100px; */
-    width: 100%;
-    height: 600px;
-  }
-
  .zoom:hover{
      transform: scale(1.1)!important;
  }
@@ -128,7 +121,7 @@ html {
     }
 
     .navigation {
-    width: 100%;
+    min-width: 320px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -161,15 +154,20 @@ html {
     }
 
     .stretching-body{
-    color: var(--txt-c-white);
     font-family: var(--font-main);
+    /* margin-top: 10px; */
+    }
+
+    .stretching-body> a{
+    text-decoration: none;
+    color: var(--txt-c-white);
+    font-size: 15px;
     text-align: center;
     align-items: center;
-    display: flex; 
-    margin-top: 10px;
+    display: flex;  
     margin-left: 10px;
-    font-size: 17px;
     }
+
     .stretching-body> p> a{
         color:var(--c-white);
         text-decoration: none;
@@ -939,15 +937,6 @@ font-size: 110%;
 }
 
     /* галерея*/
-
-    /* #gallary>h1{
-        text-align: center;
-        font-family: "Pacifico", Sans-serif;
-        text-align: center;
-        color: var(--txt-c-dark-grey); 
-        margin: 25px;
-        font-size: 50px;
-    } */
     .photo{
         float: left;
         width: 100%;
@@ -990,6 +979,20 @@ font-size: 110%;
     }
 
     /* review */
+    .swiper-container {
+        /* margin-left: 100px;
+        margin-right: 100px; */
+        width: 100%;
+        height: auto;
+        /* height: 600px; */
+      }
+    .swiper-wrapper> img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center; 
+        margin-bottom: 20px;   
+        } 
 
     .review-title{
         text-align: center;
@@ -1168,14 +1171,16 @@ font-size: 110%;
         .desktop-element {
           display: block !important;
         }
-    
+        .navigation {
+            width: 100%;
+        }
         .stretching-body{
             color: var(--txt-c-white);
             font-family: var(--font-main);
             text-align: center;
             align-items: center;
             display: flex;
-            margin-top: 10px;
+            /* margin-top: 10px; */
             margin-left: 10px;
             font-size: 17px;
             margin-right: 20px;
@@ -1511,5 +1516,14 @@ font-size: 110%;
         float: left; 
         text-align: center; 
     }
+
+      /* review */
+      .swiper-container {
+        margin-left: 100px;
+        margin-right: 100px;
+        height: 700px;
+      }
+       
+
 
 }
