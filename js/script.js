@@ -8,7 +8,17 @@ const modalSlider = document.querySelector('#modal-slider');
 const modalgGroupBtn = document.querySelector('#modal-group-btn');
 const modalGroup = document.querySelector('#modal-group');
 
-const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
+
+const myVideoModal = document.querySelector('#my-video-modal');
+const myVideoBtn = document.querySelector('#my-video-btn');
+// const myVideoBtn = document.querySelectorAll('#my-video-btn')
+// const myVideoModal = document.querySelectorAll('#my-video-modal')
+// const myVideoBtn = document.querySelector('#my-video-btn');
+// const myVideoModal = document.querySelector('#my-video-modal');
+
+
+
+const modalCloseBtn = document.querySelectorAll('.modal-close-btn');
 
 const modalsWrappers = document.querySelectorAll('.modal-area-bgd');
 const modalContainers = document.querySelectorAll('.modal-area-content');
@@ -19,8 +29,8 @@ const BODY_SCROLL_DISABLE_CLASS = 'body-scroll-disable';
 enableCloseModalOnBgdClick();
 hideModalOnMobileMenuElementsClick();
 
-const modals = [mobileMenu, modalSlider, modalPersonal, modalGroup];
-const buttons = [mobileMenuBtn, modalSliderBtn, modalPersonalBtn, modalgGroupBtn];
+const modals = [mobileMenu, modalSlider, modalPersonal, modalGroup, myVideoModal];
+const buttons = [mobileMenuBtn, modalSliderBtn, modalPersonalBtn, modalgGroupBtn, myVideoBtn];
 
 buttons.forEach((btn, index) => {
     const projectModal = modals[index];

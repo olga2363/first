@@ -13,17 +13,15 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/aos.css">
 	<link rel="stylesheet" href="style/swiper.min.css">
-
-	<link rel="stylesheet" href="font family/Caveat/Caveat-VariableFont_wght.ttf">
-	<link rel="stylesheet" href="font family/Pacifico/Pacifico-Regular.ttf">
-
 	<link href="style/lightbox.min.css" rel="stylesheet">
-	<!-- <link rel = "preconnect" href = "https://fonts.gstatic.com"> -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-	<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/500639fc35.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
@@ -141,9 +139,12 @@
 							<div class="trainings">
 							Функциональная тренировка, направлена на развитие всех двигательных качеств тела. Работа с силой,гибкостью, балансом и выносливостью.
 							25-30 минут длится активная часть и 25-30 растяжка всех мышц. Для этой тренировки, вам понадобятся кроссовки.
-							</div>					
-							<video height="400px" width="600px" style="outline-style:none;" controls preload loop >
-							<source src="video/InShot_20210219_200115916.mp4"></video>
+							
+							</div>				
+							<button class="button-me zoom trainings-my-video-btn" id="my-video-btn">
+								<i class="fas fa-play"></i> PLAY
+							</button>
+							
 						</div>
 					</div>
 			</div>
@@ -401,8 +402,16 @@
 					</div>
                 </div>
             </div>
+			<!-- MY VIDEO -->
+			<div class="modalwin modal-area-bgd" id="my-video-modal">
+				<div class="my-video-container">
+					<i class="fas fa-times modal-close-btn"></i>
+					<video style="outline-style:none;" width="95%" controls preload loop class="my-video-content modal-area-content" src="video/InShot_20210219_200115916.mp4" controls>
+					</video>
+				</div>
+			</div>
 			<!-- modal slaider -->
-			 <div id="modal-slider" class="modalwin modal-slider modal-area-bgd">
+			<div id="modal-slider" class="modalwin modal-slider modal-area-bgd">
 				 <div class="modal-slider-content">
 					<div class="container modal-slider-container">
 						<i class="fas fa-times modal-close-btn modal-slider-close-btn" id=""></i>
