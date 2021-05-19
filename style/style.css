@@ -736,6 +736,8 @@ html {
     margin-left: -30px;
     position: absolute;
     margin-top: 18px;
+    /* position: fixed;
+    z-index: 1; */
     }
 
     .timetable-info-content-text{
@@ -759,6 +761,8 @@ html {
     text-indent: 20px;
     text-align: center;
     padding-top: 4px;
+    /* position: fixed;
+    z-index: 5; */
     } 
 
     .timetable-info-content-contact> a:hover,
