@@ -407,6 +407,7 @@ html {
     }
 
     /*модальное окно*/
+    /* modal-menu */
     .modal-mobile-content{
     background-color: var(--txt-c-white);
     display: flex;
@@ -416,6 +417,7 @@ html {
     z-index: 8;
     }
 
+    /* modal slaider */
     .modal-slider{
     height: 100%;
     width: 100%;
@@ -452,16 +454,20 @@ html {
     color: var(--txt-c-white);
     text-indent: 20px;
     text-shadow: 1px 2px 3px var(--txt-c-dark-grey);
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    top: 0;     
     } 
 
-    .modal-slider-container-mobile> p{
+    /* .modal-slider-container-mobile> p{
     width: 95%;
     height: auto;
     padding: 10px;
     text-align: justify;
     position: fixed;
     top: 0;
-    }
+    } */
 
     .mobile-title{
     text-align: center;
@@ -645,7 +651,6 @@ html {
     margin-bottom: 70px;
     letter-spacing: 1.5px;
     word-spacing: 1.5px; 
-    text-align: center;
     box-sizing: border-box;
     text-align: center;
     }
@@ -1067,7 +1072,97 @@ html {
         text-shadow: rgb(184, 18, 184) 1px 0 10px;
         font-size: 140%;
         }
-     /* Расписание Занятий */
+
+        /* slaider */
+
+        .slide-text-one {
+        font-size: 25px;
+        top: 20%;
+        right: 25px;
+        width: 225px;
+        }
+
+        .slide-text-two{    
+        top: 62%;
+        left: 59%;
+        font-size: 20px;
+        }
+        
+        .slide-text-two-second{
+        left: 55%;
+        font-size: 20px;
+        }
+
+        /* training-format */
+        .training-format-foto {
+        height: 335px;
+        }
+
+        .abon{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        }
+
+        /* gallary */
+
+        .content-gallary{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        } 
+
+        .photo{
+        width: 45%; 
+        float: left; 
+        text-align: center; 
+        }
+
+    
+
+     /* MODAL*/
+
+        /* modal slaider */
+        .modal-slider{
+        height: 100%;
+        width: 100%;
+        right: 0;
+        left: 0;
+        font-size: 13px; 
+        margin: 0 auto;
+        padding: 10px;
+        position: fixed;
+        z-index: 7;
+        }
+
+        .modal-slider-container-mobile> p{
+        text-align: justify;
+        text-shadow: none;
+        position: fixed;
+        color: var(--txt-c-white);
+        text-indent: 20px;
+        text-shadow: 1px 2px 3px var(--txt-c-dark-grey);
+        /* min-width: 640px;  */
+        width: 80%;
+        /* height: auto; */
+        box-sizing: content-box;
+        top: 0;     
+        } 
+    
+        .modal-slider-container-mobile> img{
+        border: 5px solid #eee;
+        box-sizing: border-box; 
+        border-radius: 20px;
+        width: 100%; 
+        height: auto;
+        object-fit: cover;
+        margin: 0 auto;
+        object-position: 0;
+        opacity: 0.7;
+        } 
+
+       
 
 
     }
@@ -1167,14 +1262,14 @@ html {
     
         .slide-text-one{
         font-family: var(--font-txt);
-        width: 453px;
+        width: 400px;
         height: auto;
         right: 55px;
         color:var(--txt-c-dark-grey);
-        font-size: 40px;
+        font-size: 35px;
         padding: 8px 12px;
         position: absolute;
-        top: 8%;
+        top: 9%;
         text-align: justify;
         }
     
@@ -1319,6 +1414,9 @@ html {
         .abon{
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
+        text-align: center;
+        width: 60%;
         }
 
         #price-content{
@@ -1530,7 +1628,7 @@ html {
     
         .modal-slider-container> img{
         height: 100%;
-        width: 90%;
+        width: 100%;
         border: 5px solid #eee;
         box-sizing: border-box; 
         border-radius: 20px;
@@ -1546,7 +1644,8 @@ html {
         } 
     
         .content-modal-win-text{
-        width: 519px;
+        /* width: 519px; */
+        width: 35%;
         height: auto;
         top: 5%;
         right: 0;
@@ -1556,14 +1655,16 @@ html {
         }
     
         .content-modal-win-text-two{
-        width: 480px;
+        /* width: 480px; */
+        width: 34%;
         height: auto;
         right: 0;
         top: 19%;
         left: 11.5%;
         }
         .content-modal-win-text-three {
-        width: 429px;
+        width: 30%;
+        /* width: 429px; */
         height: auto;
         right: 0;
         top: 40%;
@@ -1571,7 +1672,8 @@ html {
         }
     
         .content-modal-win-text-four{
-        width: 347px;
+        width: 25%;
+        /* width: 347px; */
         height: auto;
         right: 0;
         left: 11.5%;
@@ -1579,7 +1681,8 @@ html {
         }
 
         .content-modal-win-text-five{
-        width: 496px;
+        width: 37%;
+        /* width: 496px; */
         height: auto;
         text-indent: 20px;
         right: 11.5%;
@@ -1587,7 +1690,8 @@ html {
         }
         
         .content-modal-win-text-six{
-        width: 518px;
+        width: 36%;
+        /* width: 518px; */
         height: auto;
         right: 11.5%;
         top: 19%;
@@ -1595,19 +1699,21 @@ html {
     
         .content-modal-win-text-seven{
         height: auto;
-        width: 500px;
+        width: 35%;
+        /* width: 500px; */
         right: 11.5%;
         top: 37%;
         }
         
         .content-modal-win-text-eight{
         height: auto;
-        width: 455px;
+        width: 32%;
+        /* width: 455px; */
         right: 11.5%;
         top: 51%;
         }
 
 
 
-        
+
     }
