@@ -912,8 +912,8 @@ html {
     }
 
     .swiper-wrapper> img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
     object-fit: contain;
     object-position: center; 
     margin-bottom: 20px;   
