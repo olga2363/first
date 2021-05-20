@@ -277,12 +277,18 @@ html {
     cursor: pointer;
     height: 80px;
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    top: 19%;
     margin-top: -22px;
     background-color: inherit;
     outline-style: none;
     }
 
+    #prev img, #next img{
+        height: 15px;
+    }
+    
+    
     #next{
     right: 0;
     }
