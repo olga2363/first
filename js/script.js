@@ -11,12 +11,6 @@ const modalGroup = document.querySelector('#modal-group');
 
 const myVideoModal = document.querySelector('#my-video-modal');
 const myVideoBtn = document.querySelector('#my-video-btn');
-// const myVideoBtn = document.querySelectorAll('#my-video-btn')
-// const myVideoModal = document.querySelectorAll('#my-video-modal')
-// const myVideoBtn = document.querySelector('#my-video-btn');
-// const myVideoModal = document.querySelector('#my-video-modal');
-
-
 
 const modalCloseBtn = document.querySelectorAll('.modal-close-btn');
 
