@@ -518,31 +518,34 @@ html {
     font-size: 17px; 
     }
 
-    .trainings>img{
-    height: 200px;
-    width: 132px;
-   float: left;
-    margin: 7px 7px 7px 0;
+    .trainings> img{
+    height: 215px;
+    width: auto;
+    /* width: 132px; */
+    float: left;
+    /* margin: 7px 7px 7px 0; */
+    margin: 7px -11px -31px 0;
+    
     }
 
     .opisanie{
     border-bottom: 2px solid  rgb(50, 52, 60);
-    font-size: 25px;
+    font-size: 15px;
     letter-spacing: 1px;
     word-spacing: 1px;
-    margin-left: 55px;
-    margin-right: 55px;
-    line-height: 40px;
+    /* margin-left: 55px;
+    margin-right: 55px; */
+    line-height: 32px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: row;
     }
 
-    .opisanie-foto{
+    /* .opisanie-foto{
     height: 300px;
     width: auto;
-    }
+    } */
 
     /* вид текста label при активном переключателе */
     .hide:checked + label {
@@ -561,8 +564,8 @@ html {
     display: flex; 
     width: 97%;
     margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
     padding: 0;
     color: var(--txt-c-dark-grey);
     cursor: pointer;
@@ -664,6 +667,7 @@ html {
     .btn-modal-personal{
     position: fixed;
     bottom: 100px;
+    /* background-color: var(--c-light-grey); */
     }
 
     /* стоимость абоабонов*/
@@ -826,6 +830,8 @@ html {
     .training-format-foto{
     height: 200px;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
     }
 
     .training-home{
@@ -1107,6 +1113,12 @@ html {
         }
 
         /* slaider */
+        .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+       
+        }
 
         .slide-text-one {
         font-size: 25px;
