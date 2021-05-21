@@ -132,10 +132,14 @@
     display: flex;
     } */
 
-    .mobile-menu {
+    .icons{
     height: 50px;
     font-size: 15px;
     color: var(--txt-c-white);
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -153,7 +157,7 @@
     position: fixed;
     z-index: 5;
     justify-content: space-around;
-    border-bottom: 3px solid silver;
+    /* border-bottom: 3px solid silver; */
     }
 
     .navigation-part {
@@ -162,18 +166,19 @@
     align-items: center;
     }
 
-    .mobile-menu {
-        width: max-content;
+    /* .mobile-menu {
+        width: max-content; */
     /* width: 30px; */
     /* height: 30px; */
-    display: flex; 
+    /* display: flex; 
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    }
+    } */
     
-    .mobile-menu i {
+    .mobile-menu i,
+    .icons i {
     color: var(--c-light);
     padding: 5px;
     }
@@ -225,7 +230,7 @@
     align-items: center;
     }
 
-    .menu-items a{
+    .icons a{
     text-decoration: none;
     padding: 10px; 
     color: var(--txt-c-dark-grey);
@@ -238,7 +243,15 @@
     color: var(--txt-c-dark-grey);
     }
 
+    .mobile-menu i:hover{
+    color: var(--txt-c-white);
+    text-shadow: rgb(184, 18, 184) 1px 0 10px;
+    font-size: 140%;
+    }
+
+
     .icons a:hover,
+    .mobile-menu a:hover,
     .mobile-menu-contacts a:hover,
     .menu-items a:hover {
     color: var(--txt-c-dark-grey);
@@ -246,16 +259,16 @@
     font-size: 140%;
     }
 
-    .icons> section> a{
+    .icons> a{
     color:var(--txt-c-white);
     }
 
-    .icons> section> a:hover {
+    .icons> a:hover {
     text-shadow: rgb(184, 18, 184) 1px 0 10px;
     font-size: 105%;
     }
 
-    .icons> section> a:active{
+    .icons> a:active{
     color:var(--c-violet);
     }
 
@@ -303,7 +316,7 @@
     height: 80px;
     position: absolute;
     /* top: 50%; */
-    top: 110px;
+    top: 135px;
     margin-top: -22px;
     background-color: inherit;
     outline-style: none;
