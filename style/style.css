@@ -62,6 +62,7 @@
     .button-me:hover{
     background-color: none;
     outline-style:  none;
+    transform: scale(1.1)!important;
     }
 
 
@@ -121,6 +122,7 @@
 
     .menu{
     /* width: 100%; */
+    /* max-width: 45%; */
     height: 50px;        
     display: flex;
     flex-direction: row;
@@ -133,6 +135,7 @@
     } */
 
     .icons{
+    /* max-width: 25%; */
     height: 50px;
     font-size: 15px;
     color: var(--txt-c-white);
@@ -162,7 +165,7 @@
 
     .navigation-part {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     }
 
@@ -185,6 +188,8 @@
 
     .stretching-body{
     font-family: var(--font-main);
+    /* max-width: 30%; */
+    font-size: 15;
     }
 
     .stretching-body> a,
@@ -229,13 +234,18 @@
     flex-direction: column;
     align-items: center;
     }
-
+    .mobile-menu-items{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
     .icons a{
     text-decoration: none;
     padding: 10px; 
     color: var(--txt-c-dark-grey);
     }
-
+    .mobile-menu-items a,
     .icons a,
     .mobile-menu-contacts a{
     text-decoration: none;
@@ -243,6 +253,7 @@
     color: var(--txt-c-dark-grey);
     }
 
+    .mobile-menu-items a:hover,
     .mobile-menu i:hover{
     color: var(--txt-c-white);
     text-shadow: rgb(184, 18, 184) 1px 0 10px;
@@ -367,7 +378,8 @@
     background-color:var(--c-light-grey);
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 40s ease;
+    transition: 40s ease;
+    /* transition: background-color 40s ease; */
     }
 
     .active, .dot:hover {
@@ -377,9 +389,9 @@
     /* Fading animation */
     .fade {
     -webkit-animation-name: slide;
-    -webkit-animation-duration: 500s;
+    -webkit-animation-duration: 50s;
     animation-name: slide;
-    animation-duration: 500s;
+    animation-duration: 50s;
     }
   
     @-webkit-keyframes slide {
@@ -550,7 +562,7 @@
 
     /* вид текста label */
     .hide + label {
-    width: 97%;
+    width: 100%;
     margin-top: 25px;
     padding: 0 55px 0px 55px 0;
     color: var(--txt-c-dark-grey);
@@ -610,7 +622,7 @@
     /* когда чекбокс активен показываем блоки с содержанием  */
     .hide:checked + label + div {
     display: flex; 
-    width: 97%;
+    width: 100%;
     margin-top: 25px;
     /* margin-left: 15px;
     margin-right: 15px; */
@@ -699,6 +711,11 @@
     width: 100%;
     justify-content: center;
     }
+    /* .navigation-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    } */
 
     /* modal personal */
     .modal-group-content,
@@ -722,8 +739,7 @@
 
     .wrap-personal,
     .wrap-split,
-    .wrap-group
-    {
+    .wrap-group{
     border-width: 5px;
     border-radius: 20px;
     border: 7px solid #eee;
@@ -1291,8 +1307,6 @@
         opacity: 0.7;
         } 
 
-       
-
 
     }
 
@@ -1355,8 +1369,8 @@
         }
 
         .menu-items {
-         flex-direction: row;
-         }
+        flex-direction: row;
+        }
 
         .menu-items a{
         color: var(--c-white); 
@@ -1449,7 +1463,7 @@
         font-size: 50px;
         }
 
-     .trainings{
+        .trainings{
         justify-content: space-around;
         width: 85%;
         margin: 52px 17px 20px 27px;
@@ -1470,6 +1484,7 @@
 
         /* вид текста label при активном переключателе */
         .hide:checked + label {
+        max-width: 100%;
         border-bottom: 0;
         padding-left: 15px;
         padding-right: 15px;
@@ -1481,10 +1496,10 @@
         /* когда чекбокс активен показываем блоки с содержанием  */
         .hide:checked + label + div {
         display: flex; 
-        width: 100%; 
+        max-width: 100%; 
         margin-left: 20px;
         padding: 15px;
-        /* align-items: flex-end;     */
+        /* align-items: flex-end;*/     
     }
 
         /*расписане тренировок*/

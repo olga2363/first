@@ -1,5 +1,6 @@
 
-function showSlides(n) {
+function showSlides(n) 
+{
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
@@ -25,5 +26,9 @@ function showSlides(n) {
     showSlides(slideIndex = n);
   }
   
+  let timer = setInterval(function(){
+    slideIndex++;
+    showSlides(slideIndex);
+  },7000);
 
   
