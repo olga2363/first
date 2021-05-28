@@ -29,6 +29,6 @@ function showSlides(n)
   let timer = setInterval(function(){
     slideIndex++;
     showSlides(slideIndex);
-  },7000);
+  },8000);
 
   

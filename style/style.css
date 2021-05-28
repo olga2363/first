@@ -55,7 +55,7 @@
     color: var(--txt-c-white);
     /* color: var(--txt-c-dark-grey); */
     font-style: var(--font-txt);
-    /* text-shadow: rgb(184, 18, 184) 1px 0 10px;  */
+    text-shadow: rgb(184, 18, 184) 1px 0 10px; 
     border-radius: 10px;
     background-color: Transparent;
     background-repeat:no-repeat; 
@@ -64,7 +64,7 @@
     .button-me:hover{
     background-color: none;
     outline-style:  none;
-    transform: scale(1.1)!important;
+    /* transform: scale(1.1)!important; */
     }
 
 
@@ -203,9 +203,15 @@
 
     .mobile-menu-icons a:hover,
     .mobile-menu-items a:hover,
-    .mobile-menu-contacts a:hover,
-    .mobile-menu i:hover{
+    .mobile-menu-contacts a:hover{
     color: var(--txt-c-dark-grey);
+    text-shadow: rgb(184, 18, 184) 1px 0 10px;
+    font-size: 140%;
+    } 
+
+    .mobile-menu i:hover,
+    .mobile-menu i:active{
+    color: var(--txt-c-white);
     text-shadow: rgb(184, 18, 184) 1px 0 10px;
     font-size: 140%;
     }
@@ -309,7 +315,8 @@
     /* transition: background-color 40s ease; */
     }
 
-    .active, .dot:hover {
+    .dot:active,
+    .dot:hover {
     background-color: var(--c-grey);
     }
 
@@ -363,14 +370,15 @@
     margin-bottom: 5px;
     }
 
-    .slide-text-two-second-btn{
+    /* .slide-text-two-second-btn{
     width: 110px;
     height: auto;
-    /* font-size: 15px;
-    position: absolute;
-    top: 85%;
-    left: 11%; */
     padding: 2px;
+    }
+     */
+    .slide-text-two-second-btn:focus{
+    text-decoration: none;
+    outline-style: none;
     }
 
     .slide-text-three{
@@ -379,6 +387,18 @@
     height: auto;
     font-size: 15px;
     text-align: center;
+    position: absolute;
+    top: 26%;
+    left: 3%;
+    line-height: 1;
+    }
+
+    .slide-text-four{
+    font-family: var(--font-txt);
+    width: 50%;
+    height: auto;
+    font-size: 15px;
+    text-align: left;
     position: absolute;
     top: 26%;
     left: 3%;
@@ -398,6 +418,7 @@
 
     /* modal slaider */
     .modal-slider{
+    display: flex;
     height: 100%;
     width: 100%;
     right: 0;
@@ -406,20 +427,31 @@
     margin: 0 auto;
     position: fixed;
     z-index: 7;
+    background-color: var(--txt-c-white);
+    }
+
+    .modal-slider-content{
+    width: 100%;
+    background-image:  url('../foto/slider/IMG_5207\ —\ копия.JPG');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    background-repeat: no-repeat;
     }
 
     .modal-slider-container{
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     z-index: 8;
-    background-color: var(--c-white);
-    /* background-image: url('../foto/IMG_0480\)\)—копия.jpg'); */
     }
 
+    /* .modal-slider-container-mobile{
+    opacity: 1;
+   } */
     /* .modal-slider-container-mobile> img{
     border: 5px solid #eee;
     box-sizing: border-box; 
@@ -435,26 +467,12 @@
     .modal-slider-container-mobile> p{
     text-align: justify;
     text-shadow: none;
-    /* position: fixed; */
-    color: var(--txt-c-dark-grey);
+    color: var(--c-white);
+    text-shadow: 1px 2px 10px var(--txt-c-dark-grey);
     text-indent: 20px;
-    /*text-shadow: 1px 2px 3px var(--txt-c-dark-grey);
-     width: 95%; */
-    height: auto;
     padding: 10px;
     top: 5%; 
-    background-color: var(--c-white);
-    /* background-image: url('/IMG_0480))—копия.jpg');     */
-    } 
-
-    /* .modal-slider-container-mobile> p{
-    width: 95%;
-    height: auto;
-    padding: 10px;
-    text-align: justify;
-    position: fixed;
-    top: 0;
-    } */
+   } 
 
     .mobile-title{
     text-align: center;
@@ -502,17 +520,19 @@
     
     .trainings{
     padding-left: 5px;
-    font-size: 17px; 
+    font-size: 17px;
     }
 
-    .trainings> img{
+    .opisanie-foto-shpagat{
     height: 215px;
-    width: auto;
-    /* width: 132px; */
     float: left;
-    /* margin: 7px 7px 7px 0; */
-    margin: 7px -11px -31px 0;
-    
+    margin: 1px 6px 7px 0;
+    }
+
+    .opisanie-foto-strethcing{
+      width: 130px;
+      float: right;
+      margin: 7px 0 7px 9px;
     }
 
     .opisanie{
@@ -520,19 +540,12 @@
     font-size: 15px;
     letter-spacing: 1px;
     word-spacing: 1px;
-    /* margin-left: 55px;
-    margin-right: 55px; */
     line-height: 32px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: row;
     }
-
-    /* .opisanie-foto{
-    height: 300px;
-    width: auto;
-    } */
 
     /* вид текста label при активном переключателе */
     .hide:checked + label {
@@ -551,8 +564,6 @@
     display: flex; 
     width: 100%;
     margin-top: 25px;
-    /* margin-left: 15px;
-    margin-right: 15px; */
     padding: 0;
     color: var(--txt-c-dark-grey);
     cursor: pointer;
@@ -562,9 +573,8 @@
     word-spacing: 0.5px;
     flex-direction: column;
     align-items: center;
-    /* align-items: flex-end; */
     
-    /* чуточку анимации при появлении */
+    /* анимациz при появлении */
     -webkit-animation:fade ease-in 0.5s; 
     -moz-animation:fade ease-in 0.5s;
     animation:fade ease-in 0.5s; 
@@ -620,6 +630,7 @@
     color: var(--txt-c-dark-grey);
     background: transparent;
     padding: 10px 40px;
+    margin-bottom: 20px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -843,9 +854,13 @@
     object-fit: cover;
     object-position: center;
     }
-    .training-format-btn{
+    .training-format-btn,
+    .training-format-btn:focus{
     margin: 5px;
+    text-decoration: none;
+    outline-style: none;
     }
+
 
     .training-home{
     margin-top: 25px;
@@ -855,9 +870,10 @@
     .btn-modal-group,
     .btn-modal-personal{
     font-family: var(--font-txt);
+    color: var(--c-dark-grey);
     bottom: 44px;
     position: relative;
-    background: rgba(255,245,215,0.3) 
+    background: rgba(255,245,215,0.3);
     /* font-size: 23px; */
     }
 
@@ -1182,17 +1198,10 @@
         left: 3%;
         line-height: 1.3;
         }
-
-        /* .slide-text-two{    
-        top: 62%;
-        left: 59%;
-        font-size: 20px;
-        }
         
-        .slide-text-two-second{
-        left: 55%;
+        .slide-text-four{
         font-size: 20px;
-        } */
+        } 
 
         /* training-format */
         .training-format-foto {
@@ -1238,22 +1247,19 @@
         }
 
         
-        .modal-slider-container-mobile> p{
+        /* .modal-slider-container-mobile> p{
         text-align: justify;
         text-shadow: none;
-        /* position: fixed; */
         color: var(--txt-c-white);
         text-indent: 20px;
-        color: var(--txt-c-dark-grey);
-        /* text-shadow: 1px 2px 3px var(--txt-c-dark-grey); */
-        /* min-width: 640px;  */
+        /* color: var(--txt-c-dark-grey); 
         width: 80%;
         height: auto;
         box-sizing: content-box;
         top: 0;     
-        } 
+        }  */
     
-        .modal-slider-container-mobile> img{
+        /* .modal-slider-container-mobile> img{
         border: 5px solid #eee;
         box-sizing: border-box; 
         border-radius: 20px;
@@ -1263,7 +1269,7 @@
         margin: 0 auto;
         object-position: 0;
         opacity: 0.7;
-        } 
+        }  */
 
 
     }
@@ -1393,14 +1399,10 @@
         line-height: 1.5;
         }
 
-        /* .slide-text-two-second {
-        width: 300px;
-        top: 76%;
-        left: 56%;
-        font-size: 33px;
-        } */
-
- 
+        .slide-text-four{
+        font-size: 30px;
+        } 
+    
         /*Описание тренировок*/
         .description-of-trainings{
         width: 100%;
@@ -1423,16 +1425,23 @@
 
         .trainings{
         justify-content: space-around;
-        width: 85%;
+        width: 58%;
         margin: 52px 17px 20px 27px;
         font-size: 25px;
+        line-height: 2;
         } 
     
-        .trainings>img{
+        .opisanie-foto-shpagat{
         height: 280px;
         width: auto;
         float: left;
         margin: 7px 20px 7px 0;
+        }
+        .opisanie-foto-strethcing{
+        height: 280px;
+        width: auto;
+        float: right;
+        /* margin: 7px 20px 7px 0; */
         }
 
         .opisanie{
@@ -1452,13 +1461,13 @@
         } */
 
         /* когда чекбокс активен показываем блоки с содержанием  */
-        .hide:checked + label + div {
-        /* display: flex; 
+         /*.hide:checked + label + div {
+        display: flex; 
         max-width: 100%;  */
         /* margin-left: 20px;
         padding: 15px; */
-        /* align-items: flex-end;*/     
-    }
+        /* align-items: flex-end;  
+    }*/   
 
         /*расписане тренировок*/
         #timetable{
@@ -1554,6 +1563,7 @@
         margin-bottom: 50px;
         font-size: 50px;
         }
+
         .wrap-personal,
         .wrap-split,
         .wrap-group{
@@ -1753,10 +1763,22 @@
         position: fixed;
         z-index: 7;
         }
-        
-        .modal-slider-container{
-        background-color: inherit;
+        .modal-slider-content{
+        background-image:  url('../foto/slider/IMG_5207.JPG');
+        opacity: 1;
+        /* background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+        background-repeat: no-repeat; */
         }
+
+        .modal-slider-container-mobile p{
+        max-width: 75%;
+        margin: 0 auto;
+        right: 0;
+        }
+
+        /* 
         .modal-slider-container> img{
         height: 100%;
         width: 100%;
@@ -1775,7 +1797,6 @@
         } 
     
         .content-modal-win-text{
-        /* width: 519px; */
         width: 35%;
         height: auto;
         top: 5%;
@@ -1786,7 +1807,6 @@
         }
     
         .content-modal-win-text-two{
-        /* width: 480px; */
         width: 34%;
         height: auto;
         right: 0;
@@ -1795,7 +1815,6 @@
         }
         .content-modal-win-text-three {
         width: 30%;
-        /* width: 429px; */
         height: auto;
         right: 0;
         top: 40%;
@@ -1804,7 +1823,6 @@
     
         .content-modal-win-text-four{
         width: 25%;
-        /* width: 347px; */
         height: auto;
         right: 0;
         left: 11.5%;
@@ -1813,7 +1831,6 @@
 
         .content-modal-win-text-five{
         width: 37%;
-        /* width: 496px; */
         height: auto;
         text-indent: 20px;
         right: 11.5%;
@@ -1822,7 +1839,6 @@
         
         .content-modal-win-text-six{
         width: 36%;
-        /* width: 518px; */
         height: auto;
         right: 11.5%;
         top: 19%;
@@ -1831,7 +1847,6 @@
         .content-modal-win-text-seven{
         height: auto;
         width: 35%;
-        /* width: 500px; */
         right: 11.5%;
         top: 37%;
         }
@@ -1839,14 +1854,10 @@
         .content-modal-win-text-eight{
         height: auto;
         width: 32%;
-        /* width: 455px; */
         right: 11.5%;
         top: 51%;
-        }
-/* .swiper-pagination{
-    margin-top: 50px;
-    position: end;
-} */
+        } */
+
 
 
 
