@@ -1586,28 +1586,17 @@
         }
 
         .wrap-split{
-        /* border-style: ridge; */
         height: 300px;
         width: 400px;
-        /*border-width: 5px;
-        border-radius: 20px;
-         border: 7px solid #eee;
-        box-sizing: border-box;   */
         }
 
         .wrap-group{
         margin: 0px 10px 0px 10px;
-        /* border-style: ridge; */
         height: 392px;
         width: 400px;
-        /* border-width: 5px;
-        border-radius: 20px;
-        border: 7px solid #eee;
-        box-sizing: border-box;   */
         }
 
         .one-trainings{
-        /* border-style: ridge; */
         border-width: 5px;
         border-radius: 20px;
         border: 7px solid #eee;
