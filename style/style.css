@@ -55,10 +55,11 @@
     color: var(--txt-c-white);
     /* color: var(--txt-c-dark-grey); */
     font-style: var(--font-txt);
-    text-shadow: rgb(184, 18, 184) 1px 0 10px; 
+    /* text-shadow: rgb(184, 18, 184) 1px 0 10px;  */
     border-radius: 10px;
     background-color: Transparent;
     background-repeat:no-repeat; 
+    background: rgba(12, 12, 11, 0.4);
     }
 
     .button-me:hover{
@@ -635,7 +636,22 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    text-shadow:rgb(184, 18, 184) 1px 0 10px;
     transition: var(--animation-transition);
+    }
+    .trainings-my-video-btn2{
+      border: 2px solid var(--c-dark-grey);
+      /* color: var(--txt-c-dark-grey); */
+      color: var(--txt-c-white);
+      font-style: var(--font-txt);
+      border-radius: 10px;
+      padding: 10px 40px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 20px;
+    
+      background: rgba(12, 12, 11, 0.4);
     }
 
     .trainings-my-video-btn:hover{
@@ -870,10 +886,10 @@
     .btn-modal-group,
     .btn-modal-personal{
     font-family: var(--font-txt);
-    color: var(--c-dark-grey);
+    /* color: var(--c-dark-grey); */
     bottom: 44px;
     position: relative;
-    background: rgba(255,245,215,0.3);
+    background: rgba(12, 12, 11, 0.4);
     /* font-size: 23px; */
     }
 
