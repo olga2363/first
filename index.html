@@ -1,518 +1,597 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Body Stretching</title>
-		<meta charset="UTF8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<style>
-			.modalwin{
-				display: none;
-			}
-		</style>
-		<link rel="stylesheet" href="style/normalize.min.css">
-		<link rel="stylesheet" href="style/style.css">
-		<link rel="stylesheet" href="style/aos.css">
-		<link rel="stylesheet" href="style/swiper.min.css">
-		<link href="style/lightbox.min.css" rel="stylesheet">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/500639fc35.js" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-	</head>
+<head>
+	<title>Body Stretching</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<body>
-		<div class="wrap">
-			<!--меню-->
-			<div class="front-page">
-				<div class="container">
-					<nav class="navigation">
-						<div class="zoom stretching-body">
-							<a href="#logo">Body<br>Stretching</a>
-						</div>
-						<div class="menu">
-							<div class="desktop-element">
-								<div class="menu-items">
-									<a class="zoom" href="#all-trainings">Описание тренировок</a>
-									<a class="zoom" href="#format">Формат тренировок</a>
-									<a class="zoom" href="#timetable">Рассписание</a>
-									<a class="zoom" href="#price-content">Стоимость</a>
-									<a class="zoom" href="#gallary">Фотогалерея</a>
-									<a class="zoom" href="#review">Отзывы</a>
-									<a class="zoom" href="#all-contacts">Как нас найти</a>
-									<!-- <a class="zoom" href="tel:+380953377856"> +38 (095) 337 78 56 - Анна</a> -->
-								</div>
-							</div>
+	<style>
+		.modalwin {
+			display: none;
+		}
+	</style>
+	<link rel="stylesheet" href="style/normalize.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/aos.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<link href="style/lightbox.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-							<div class="navigation-part mobile-element tablet-element">
-								<!-- <div class=""> -->
-									<a class="mobile-menu " id="mobile-menu-btn">
-										<i class="fas fa-bars"></i>
-									</a>
-								<!-- </div> -->
-							</div>
-						</div>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/500639fc35.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+</head>
 
-						<div class="icons">
-							<a href="https://www.facebook.com/stretch.house.7" target="blank"><i class="fab fa-facebook-square"></i></a>
-							<a href="https://www.instagram.com/stretching.body/?igshid=1imlp4lmj8wev" target="blank"> <i class="fab fa-instagram-square"></i></a>
-							<a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" target="blank"><i class="fab fa-telegram"></i></a>
-						</div>
-					</nav>
-				</div>
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<img class="logo zoom" href="#logo" src="foto/logo.png" alt="">
+			<nav class="header__nav desktop-element">
+				<ul>
+					<li>
+						<a class="header__nav__link" href="#all-trainings">Описание тренировок</a>
+					</li>
+					<li>
+						<a class="header__nav__link" href="#format">Формат тренировок</a>
+					</li>
+					<li>
+						<a class="header__nav__link" href="#timetable">Рассписание</a>
+					</li>
+					<li>
+						<a class="header__nav__link" href="#price-content">Стоимость</a>
+					</li>
+					<li>
+						<a class="header__nav__link" href="#gallary">Фотогалерея</a>
+					</li>
+					<li>
+						<a class="header__nav__link" href="#review">Отзывы</a>
+					</li>
+					<li>
+						<a class="header__nav__link" href="#all-contacts">Как нас найти</a>
+					</li>
+				</ul>
+			</nav>
+
+			<button class="header__btn mobile-element tablet-element" id="mobile-menu-btn">
+				<i class="fas fa-bars"></i>
+			</button>
+
+			<div class="header__icons">
+				<a href="https://www.facebook.com/stretch.house.7" target="blank"><i
+						class="fab fa-facebook-square"></i></a>
+				<a href="https://www.instagram.com/stretching.body/?igshid=1imlp4lmj8wev" target="blank"> <i
+						class="fab fa-instagram-square"></i></a>
+				<a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" target="blank"><i class="fab fa-telegram"></i></a>
 			</div>
-			<!-- slider -->
-			<div>
-				<div id="logo" >
-					<div class="slideshow-container">
-						<div class="mySlides fade">
-							<!-- <div class="numbertext">1 / 4</div> -->
-							<div class="slide"><img src="foto/slider/IMG_0557(2).jpg" class="swiper-slide" alt="фото шпагат"></div>
-							<div class="slide-text-one" data-aos="fade-left"><p>"Пространство для тренировок, в&nbsp;котором твоё тело станет гибче и&nbsp;сильнее."</p></div>
-						</div>
-						
-						<div class="mySlides fade">
-							<!-- <div class="numbertext">2 / 4</div> -->
-							<div class="slide">
-								<img src="foto/slider/IMG_5207.JPG" class="swiper-slide" alt="фото на леснице" >
-							</div>
-							<div class="slide-text-two" data-aos="fade-left">
-								<p>"Меня зовут <b>Анна</b> и&nbsp;я&nbsp;<br> помогу тебе добиться<br> наилучших результатов! "</p>
-								<button class="button-me slide-text-two-second-btn zoom" id="modal-slider-btn">Подробнее...</button>			
-							</div>
-							
-						</div>
-					
-						<div class="mySlides fade">
-							<!-- <div class="numbertext">3 / 4</div> -->
-							<div class="slide">
-								<img src="foto/slider/IMG_5199.JPG" class="swiper-slide" alt="фото на балконе" >
-							</div>
-							<div class="slide-text-three" data-aos="fade-left">
-								<p>Правильное движение даёт энергию, а&nbsp;энергия&nbsp;&mdash; ещё больше движения!</p>
-							</div>
-							<!-- <div class="text">Caption Three</div> -->
-						</div>
-						
-						<div class="mySlides fade">
-							<!-- <div class="numbertext">4 / 4</div> -->
-							<div class="slide">
-								<img src="foto/slider/imgonline-com-ua-Mirror-eJH7J4lUCh.jpg" class="swiper-slide" alt="фото на балконе" >
-							</div>
-							<div class="slide-text-four" data-aos="fade-left">
-								<p>Любить свое тело&nbsp;&mdash; означает дарить ему много движения!</p>
-							</div>
-							<!-- <div class="text">Caption Three</div> -->
-						</div>
+		</div>
+	</div>
+</header>
 
-					</div>	
-						<button id="prev" onclick="plusSlides(-1)"><img src="foto/prev.png" alt="cтрелка назад"></button>
-						<button id="next" onclick="plusSlides(1)"><img src="foto/next.png" alt="cтрелка вперед"></button>
-				
-					
-					<div style="text-align:center">
-						<span class="dot" onclick="currentSlide(1)"></span> 
-						<span class="dot" onclick="currentSlide(2)"></span> 
-						<span class="dot" onclick="currentSlide(3)"></span> 
-						<span class="dot" onclick="currentSlide(4)"></span> 
-					</div>
-				</div>	
-			</div>		
-				
-				<!--описание тренировок-->
-			<div id="all-trainings"> 
-				<div class="container">
-						<h1 class="description-of-trainings mobile-title">Описание тренировок</h1> 
-						<div class="description-of-trainings-content">
-							
-							<input class="hide" id="hd-1" type="checkbox">
-							<label for="hd-1">Шпагат</label>
-							<div class="opisanie" >
-								<p class="trainings">
-									<img class="opisanie-foto-shpagat" src="foto/IMG_0488___-removebg-preview.png" alt="фото сидя">
-									Тренировка, направлена на&nbsp;растяжку и&nbsp;укрепление мышц ног. В&nbsp;начале тренировки выполняем активный разогрев. Учимся делать продольные и&nbsp;поперечный шпагат сидя, вертикальные шпагаты, махи и&nbsp;другое.
-								</p>
-							</div>
-
-							<input class="hide" id="hd-2" type="checkbox">
-							<label for="hd-2">STRETCHING</label>
-							<div class="opisanie" >
-								<p class="trainings">
-									<img class="opisanie-foto-strethcing" src="foto/IMG_0530__-removebg-preview.png" alt="фото шпагат лежа на спине">
-									Расслабляющая тренировка, на&nbsp;растяжку всех групп мышц, как больших (ноги и&nbsp;спина), а&nbsp;так&nbsp;же более мелких&nbsp;&mdash; шея, руки.
-								</p>
-							</div>
-
-							<input class="hide" id="hd-3" type="checkbox">
-							<label for="hd-3">FUNCTIONAL + STRETCHING</label>
-							<div class="opisanie" >
-								<p class="trainings">
-									Функциональная тренировка, направлена на&nbsp;развитие всех двигательных качеств тела. Работа с&nbsp;силой, гибкостью, балансом и&nbsp;выносливостью.<br />
-									<br> 25&ndash;30&nbsp;минут длится активная часть и&nbsp;25&ndash;30 растяжка всех мышц. Для этой тренировки, вам понадобятся кроссовки.
-								</p>
-
-								<button class="button-me zoom trainings-my-video-btn" id="my-video-btn">
-									<i class="fas fa-play"></i> PLAY
-								</button>
-								<button class="button-me zoom trainings-my-video-btn2" id="my-video-btn">
-									<i class="fas fa-play"></i> PLAY
-								</button>
-								
-							</div>
-						</div>
+<body>
+	<!-- slider -->
+	<span id="logo">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<!-- <div class="numbertext">1 / 4</div> -->
+				<div class="slide"><img src="foto/slider/IMG_0557(2).jpg" class="swiper-slide"
+						alt="фото девушки сидя на шпагате"></div>
+				<div class="slide-text-one" data-aos="fade-left">
+					<p>"Пространство для тренировок, в&nbsp;котором твоё тело станет гибче и&nbsp;сильнее."</p>
 				</div>
 			</div>
 
-				<!--формат тренировок-->
-			<div id="format">
-				<div class="container">
-					<h1 class="mobile-title">Выбери свой формат тренировки</h1>
-					<div class="training-format"> 
-						<div class="training-home">
-							<h3 class="training-format-title">Персональная тренировка</h3>
-							<img class="training-format-foto" src="foto/format/IMG_2305-1.jpg" alt="фото персональной тренировки">
-							<button class="button-me training-format-btn btn-modal-personal zoom" data-aos="flip-left" id="modal-personal-btn">Подробнее</button>
-						</div>						
+			<div class="mySlides fade">
+				<!-- <div class="numbertext">2 / 4</div> -->
+				<div class="slide">
+					<img src="foto/slider/IMG_5207.JPG" class="swiper-slide" alt="фото на леснице">
+				</div>
+				<div class="slide-text-two" data-aos="fade-left">
+					<p>"Меня зовут <b>Анна</b> и&nbsp;я&nbsp;<br> помогу тебе добиться<br> наилучших результатов! "</p>
+					<button class="button-me slide-text-two-second-btn zoom" id="modal-slider-btn">Подробнее...</button>
+				</div>
 
-						<div class="training-studio">
-							<h3 class="training-format-title">Груповая теренировка</h3>
-							<img class="training-format-foto" src="foto/format/IMG_2170.jpg" alt="фото груповой тренировки">
-							<button class="button-me training-format-btn btn-modal-group zoom" data-aos="flip-left" id="modal-group-btn">Подробнее</button>						
-						</div>
-					</div>
-				</div>	
 			</div>
 
-			<!--Расписание Занятий-->
-			<div id="timetable">
-				<div class="container"> 
-					<h1 class="mobile-title">Расписание Занятий</h1>
-					<div class="timetable-info">
-						<img class="timetable-foto-info" src="foto/image7-removebg.png" alt="фото сидя">	
-						<!-- <div class="timetable-info-content"> -->
-							<p class="timetable-info-content-text"> Занятия проходят утром и&nbsp;вечером, <nobr>по-этому</nobr> ты&nbsp;всегда сможешь выбрать удобное время для тренировок.</p>
-							
-							<div class="desktop-element">
-								<p class="timetable-info-content-contact">Переходи в теллеграм-канал 
-									<a class="zoom" href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" style="color:  rgb(161, 47, 62); text-decoration: none;">
-										<em>BODY Stretching</em></a>
-										или звони по номеру 
-									<a class="zoom" href="tel:+380953377856" style="color:  rgb(161, 47, 62); text-decoration: none;" >
-										<em>+38 (095) 337 78 56</em></a> 
-									и я расскажу тебе подробней о рассписании.
-								</p>
-							</div>
-							<div class="mobile-element tablet-element">
-								<p class="timetable-info-content-contact"><br> Переходи в теллеграм-канал 
-									<a class="zoom" href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" style="color:  rgb(161, 47, 62); text-decoration: none;">
-										<br><br><em>BODY Stretching</em></a>
-										или звони по номеру 
-									<a class="zoom" href="tel:+380953377856" style="color:  rgb(161, 47, 62); text-decoration: none;" >
-										<br> <em>+38 (095) 337 78 56</em></a> 
-									и я расскажу тебе подробней о рассписании.
-								</p>
-							</div>
-						<!-- </div> -->
-					</div>
+			<div class="mySlides fade">
+				<!-- <div class="numbertext">3 / 4</div> -->
+				<div class="slide">
+					<img src="foto/slider/IMG_5199.JPG" class="swiper-slide" alt="фото на балконе">
 				</div>
+				<div class="slide-text-three" data-aos="fade-left">
+					<p>Правильное движение даёт энергию, а&nbsp;энергия&nbsp;&mdash; ещё больше движения!</p>
+				</div>
+				<!-- <div class="text">Caption Three</div> -->
 			</div>
 
-			<!--стоимость абонов-->
-			<div id="price-content">
-				<div class="container"> 
-					<h1 class="price mobile-title">Стоимость занятий</h1>
-					<div class="one-trainings" >
-						<ul>
-							<li class="dot-item"><p>Пробная тренировка ----------- 150 грн.</p></li>
-							<li class="dot-item"><p>Разовая тренировка ----------- 250 грн.</p></li> 
-							<li class="dot-item"><p>Персональная тренировка --- 650 грн.</p></li>
-							<li class="dot-item"><p>Сплит тренировка -------------- 850 грн.</p></li>	
-						</ul>
-					</div>
-					<div class="abon">
-						<div class="wrap-personal">
-							<h3>Абонемент Персональная тренировка</h3>
-							<div class="price-abon" >
-								<ul>
-									<li class="dot-item"><p class="point">4 тренировки - 2400 грн.</p></li>
-									<li class="dot-item"><p class="point">8 тренировок - 4600 грн.</p></li>
-								</ul>
-							</div>
-						</div>
-						<div class="wrap-group">
-							<h3 class="split-group">Абонемент Груповая тренировка</h3>
-							<div class="price-abon" >	
-								<ul>
-									<li class="dot-item"><p>4 тренировки - 850 грн.</p></li>
-									<li class="dot-item"><p>6 тренировок - 1200 грн.</p></li>
-									<li class="dot-item"><p>8 тренировок - 1500 грн.</p></li>
-									<li class="dot-item"><p>12 тренировок - 2000 грн.</p></li>
-								</ul>	
-							</div>
-						</div>
-						<div class="wrap-split" >
-							<h3 class="split-group" >Абонемент Сплит тренировка</h3>
-							<div class="price-abon" >
-								<ul>
-									<li class="dot-item"><p>4 тренировки - 3000 грн.</p></li>
-									<li class="dot-item"><p>8 тренировок - 5600 грн.</p></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+			<div class="mySlides fade">
+				<!-- <div class="numbertext">4 / 4</div> -->
+				<div class="slide">
+					<img src="foto/slider/imgonline-com-ua-Mirror-eJH7J4lUCh.jpg" class="swiper-slide"
+						alt="фото на балконе">
 				</div>
-			</div>
-
-			<!--фотогалерея-карусель-->
-			<div id="gallary">
-				<div class="container"> 
-					<h1 class="mobile-title">Фотогалерея</h1>
-					<div class="content-gallary">
-						<figure class="photo">
-							<a href="foto/galery/IMG_8273.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8273.JPG" alt="фото продольного шпагата">
-							</a>
-							<figcaption> 1 </figcaption>
-						</figure>
-						<figure class="photo">
-							<a href="foto/galery/IMG_8274.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8274.JPG" alt="фото продольний шпагат">
-							</a>
-							<figcaption>2</figcaption>
-						</figure>
-						<figure class="photo">
-							<a href="foto/galery/IMG_8275.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8275.JPG" alt="фото корректировки продольного шпагата">
-							</a>
-							<figcaption> 3 </figcaption>
-						</figure>
-						<figure class="photo">
-							<a href="foto/galery/IMG_8276.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8276.JPG" alt="фото корректировки продольного шпагата">
-							</a>
-							<figcaption> 4 </figcaption>
-						</figure>
-						<figure class="photo">
-							<a href="foto/galery/IMG_8277.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8277.JPG" alt="фото шпагат стоя">
-							</a>
-							<figcaption> 5 </figcaption>
-						</figure>
-						<figure class="photo">
-							<a href="foto/galery/IMG_8278.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8278.JPG" alt="фото груповой тренировки">
-							</a>
-							<figcaption> 6 </figcaption>
-						</figure>
-						<figure class="photo">
-							<a href="foto/galery/IMG_8279.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8279.JPG" alt="фото мостик">
-							</a>
-							<figcaption> 7</figcaption>
-						</figure>
-						<figure class="photo">
-							<a href="foto/galery/IMG_8280.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8280.JPG" alt="фото поперечного шпагата">
-							</a>
-							<figcaption> 8</figcaption>
-						</figure>
-						<figure class="photo">
-							<a href="foto/galery/IMG_8281.JPG" data-lightbox="roadtrip">
-								<img src="foto/galery/IMG_8281.JPG" alt="фота результата месяца занятий">
-							</a>
-							<figcaption>9 </figcaption>
-						</figure>
-					</div>
+				<div class="slide-text-four" data-aos="fade-left">
+					<p>Любить свое тело&nbsp;&mdash; означает дарить ему много движения!</p>
 				</div>
-			</div> 
-
-			<!-- review -->
-			<div class="container"> 
-				<div class="swiper-container" id="review" >
-				
-					<h1 class="mobile-title review-title">Отзывы</h1>
-					<div class="swiper-wrapper">
-						<!-- Slides -->
-						<img src="foto/review/Screenshot_20210223-114052_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
-						<img src="foto/review/Screenshot_20210223-113241_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
-						<img src="foto/review/Screenshot_20210223-113615_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
-						<img src="foto/review/Screenshot_20210223-113620_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
-						<img src="foto/review/Screenshot_20210223-113610_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
-						<img src="foto/review/photo_2021-05-24_20-03-47.jpg" class="swiper-slide" alt="фото отзыв">
-						<img src="foto/review/photo_2021-05-24_20-03-48.jpg" class="swiper-slide" alt="фото отзыв">
-						<img src="foto/review/photo_2021-05-24_20-03-49 (2).jpg" class="swiper-slide" alt="фото отзыв">
-						<img src="foto/review/photo_2021-05-24_20-03-49.jpg" class="swiper-slide" alt="фото отзыв">
-
-					</div>
-					<!-- If we need pagination  -->
-					<br>
-					<div class="swiper-pagination"></div>
-				
-					<!-- If we need navigation buttons -->
-					<div class="desktop-element swiper-button-prev navigation-swiper-button-prev"></div>
-					<div class="desktop-element swiper-button-next navigation-swiper-button-next"></div>
-				</div>
-				
-			</div>
-
-			<!--как найти-->
-			<div id="all-contacts" >
-				<div class="container">
-					<h1 class="mobile-title">Как нас найти</h1>
-					<div class="all-contacts-wrap">
-						<div class="contacts">
-							<div>
-								<p>Адрес <br> метро Печерск, Коновальца 36Д,<br> бизнес центр Волна</p>
-							</div>
-							<div>
-								<a href="tel:+380953377856" style="color: white;">+38 (095) 337 78 56 - Анна</a>
-							</div>
-							<div class="social-networks">
-								<a href="https://www.facebook.com/stretch.house.7" target="blank"><i class="fab fa-facebook-square"></i></a>
-								<a href="https://www.instagram.com/stretching.body/?igshid=1imlp4lmj8wev" target="blank"> <i class="fab fa-instagram-square"></i></a>
-								<a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" target="blank"><i class="fab fa-telegram"></i></a>
-							</div>
-						</div>
-
-						<div id="our-map" >
-							<div id="map">
-							</div>
-							<div id="myMap"></div>
-							<script>
-								function myMap() 
-								{
-									var mapCanvas = document.getElementById("map");
-									var mapOptions = {
-										center: new google.maps.LatLng(50.427951414043925, 30.533590807133987), 
-										zoom: 15};
-									
-									var map = new google.maps.Map(mapCanvas, mapOptions);
-									var marker = new google.maps.Marker({
-										position: mapOptions,
-										map: myMap,
-										icon:  "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
-										title: "Мы здесь"});
-								}
-							</script>
-							<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCQKTmCqmmfvo_fFCQlJMhmpQsvVr7mjE&callback=myMap"></script>
-						</div>
-					</div>
-					<footer style="text-align: center;">
-						<p>© 2021 OLGA KHOMENKO. Все права защищены</p>
-					</footer>
-				</div>
-			</div>
-
-	<!-- MODALS -->
-			<div class="modalwin-wrapper">
-				<!-- modal-menu -->
-				<div id="mobile-menu" class="modalwin modal-slider modal-mobile-menu modal-area-bgd" >
-					<div class="modal-mobile-content">
-						<div class="container mobile-menu-container">
-							<i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
-							<nav class="mobile-menu-items">
-								<a href="#all-trainings">Описание тренировок</a>
-								<a href="#format">Формат тренировок</a>
-								<a href="#timetable">Рассписание</a>
-								<a href="#price-content">Стоимость</a>
-								<a href="#gallary">Фотогалерея</a>
-								<a href="#review">Отзывы</a>
-								<a href="#all-contacts">Как нас найти</a>
-							</nav>
-
-							<div class="mobile-menu-contacts">
-								<a class="number" href="tel:+380953377856">+38 (095) 337 78 56 - Анна</a>
-							</div>
-							<div class="mobile-menu-icons">
-								<a href="https://www.facebook.com/stretch.house.7" target="blank"><i class="fab fa-facebook-square"></i></a>
-								<a href="https://www.instagram.com/stretching.body/?igshid=1imlp4lmj8wev" target="blank"> <i class="fab fa-instagram-square"></i></a>
-								<a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" target="blank"><i class="fab fa-telegram"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- MY VIDEO -->
-				<div class="modalwin modal-area-bgd" id="my-video-modal">
-					<div class="my-video-container">
-						<i class="fas fa-times modal-close-btn"></i>
-						<video style="outline-style:none;" controls preload loop class="my-video-content modal-area-content" src="video/InShot_20210219_200115916.mp4">
-						</video>
-					</div>
-				</div>
-				<!-- modal slaider -->
-				<div id="modal-slider" class="modalwin modal-slider modal-area-bgd">
-					<div class="modal-slider-content">
-						<div class="container modal-slider-container">
-							<i class="fas fa-times modal-close-btn modal-slider-close-btn"></i>
-							<!-- <img class="desktop-element" src="foto/IMG_0480)).jpg" alt="шпагат"> -->
-							<div class="modal-slider-container-mobile ">
-								
-								<p> Меня зовут <b>Анна Лапыгина</b> и я сертифицированый тренер по стретчингу, функциональному, силовому и интервальному тренингу.
-									<br> <br>Участница Nike Convention 2019, Profit Convention 2020, а так же различных мастер-классов и воркшопов.
-									<br><br>Так же прошла обучающий курс по нутриционному сопровождению: контроль, снижение и набор массы тела.
-									<br><br>Имею международную сертификацию по фасциальному тренингу и стретчингу, а так же по фасциальной ходьбе(Concept-Rossmann - Германия).
-									<br><br>Имею опыт работы более 3-х лет и как знают мои клиенты - я очень люблю свою работу. 
-									<br><br>В сфере спорта я уже 10 лет,но ещё в детстве узнала что такое растяжка и шпагат.
-									<br><br>С 15-ти летнего возраста начала активно заниматься спортом: тренажёрный зал, аэробика, осваивала разные направления фитнеса и уже в 18 лет работала фитнес-тренером.
-									<br><br>Так же занималась различными танцевальными направлениями и я уверена,что наше тело создано для того чтобы двигаться! 
-								</p> 
-							</div>
-							<!--
-							<p class="desktop-element content-modal-win-text">Меня зовут <b>Анна Лапыгина</b> и я сертифицированый тренер по стретчингу, функциональному, силовому и интервальному тренингу.</p>
-							<p class="desktop-element content-modal-win-text-two"> Участница Nike Convention 2019, Profit Convention 2020, а так же различных мастер-классов и воркшопов.
-								Так же прошла обучающий курс по нутриционному сопровождению: контроль, снижение и набор массы тела.</p>
-							<p class="desktop-element content-modal-win-text-three">Имею международную сертификацию по фасциальному тренингу и стретчингу, а так же по фасциальной ходьбе(Concept-Rossmann - Германия).</p>
-							<p class="desktop-element content-modal-win-text-four">Имею опыт работы более 3-х лет и как знают мои клиенты - я очень люблю свою работу. </p> 
-							<p class="desktop-element content-modal-win-text-five">В сфере спорта я уже 10 лет,но ещё в детстве узнала что такое растяжка и шпагат.</p> 
-							<p class="desktop-element content-modal-win-text-six">С 15-ти летнего возраста начала активно заниматься спортом: тренажёрный зал, аэробика, осваивала разные направления фитнеса и уже в 18 лет работала фитнес-тренером.</p> 
-							<p class="desktop-element content-modal-win-text-seven">Так же занималась различными танцевальными направлениями и я уверена,что наше тело создано для того чтобы двигаться! </p>
-							 <span class="desktop-element content-modal-win-text-eight">Правильное движение даёт энергию, а энергия - ещё больше движения!</span> -->
-							
-						</div>
-					</div>
-				</div>
-
-				<!-- modal-personal-->
-				<div class="modalwin modal-personal modal-area-bgd" id="modal-personal">
-					<div class="modal-personal-content">
-						<i class="fas fa-times modal-close-btn modal-personal-close-btn"></i>
-							<p>Результативность персональных занятий очень высока, поскольку всё внимание тренер уделяем исключительно Вам. Это индивидуальный подход и составление плана тренировок под ваши цели и ваши  особенности.
-							На занятиях стретчингом, одним из методов является - пассивный стретчинг, при котором тренерующийся может максимумально расслабиться и получить самый лучший результат от растяжки. 
-							На функциональных занятиях работаем комплексно над всем телом, при этом делая акцент на ваши самые " проблемные" зоны. 
-							Персональные занятия проходят по индивидуальному графику, который вы лично составляете с тренером. Узнать стоимость можно здесь.</p>
-					</div>
-				</div> 
-				<!-- modal-group -->
-				<div class="modalwin modal-group modal-area-bgd" id="modal-group">
-					<div class="modal-group-content">
-						<i class="fas fa-times modal-close-btn modal-group-close-btn"></i>
-							<p>Результативность персональных занятий очень высока, поскольку всё внимание тренер уделяем исключительно Вам. Это индивидуальный подход и составление плана тренировок под ваши цели и ваши  особенности. На занятиях стретчингом, одним из методов является - пассивный стретчинг, при котором тренерующийся может максимумально расслабиться и получить самый лучший результат от растяжки. На функциональных занятиях работаем комплексно над всем телом, при этом делая акцент на ваши самые " проблемные" зоны. Персональные занятия проходят по индивидуальному графику, который вы лично составляете с тренером. Узнать стоимость можно здесь.</p>
-					</div>
-				</div>
-
-
+				<!-- <div class="text">Caption Three</div> -->
 			</div>
 
 		</div>
+		<button id="prev" onclick="plusSlides(-1)"><img src="foto/prev.png" alt="cтрелка назад"></button>
+		<button id="next" onclick="plusSlides(1)"><img src="foto/next.png" alt="cтрелка вперед"></button>
 
-		
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+	</span>
 
 
-		<script src="js/script.js"></script>
-		<script src="js/slider.js"></script>
-		<script src="js/aos.js"></script>
-		<script src="js/animation-on-scroll.js"></script>
-		<script src="js/lightbox-plus-jquery.min.js"></script>
-		<script src="js/swiper.min.js"></script>
-		<script src="js/swiper.js"></script>
-		<script src="js/myMap.js"></script>
-		
-		
-	</body>
+	<!--описание тренировок-->
+	<span id="all-trainings">
+		<div class="container">
+			<h1 class="description-of-trainings mobile-title">Описание тренировок</h1>
+			<div class="description-of-trainings-content">
+
+				<input class="hide" id="hd-1" type="checkbox">
+				<label for="hd-1">Шпагат</label>
+				<div class="opisanie">
+					<p class="trainings">
+						<img class="opisanie-foto-shpagat" src="foto/IMG_0488___-removebg-preview.png" alt="фото сидя">
+						Тренировка, направлена на&nbsp;растяжку и&nbsp;укрепление мышц ног. В&nbsp;начале тренировки
+						выполняем активный разогрев. Учимся делать продольные и&nbsp;поперечный шпагат сидя,
+						вертикальные шпагаты, махи и&nbsp;другое.
+					</p>
+				</div>
+
+				<input class="hide" id="hd-2" type="checkbox">
+				<label for="hd-2">STRETCHING</label>
+				<div class="opisanie">
+					<p class="trainings">
+						<img class="opisanie-foto-strethcing" src="foto/IMG_0530__-removebg-preview.png"
+							alt="фото шпагат лежа на спине">
+						Расслабляющая тренировка, на&nbsp;растяжку всех групп мышц, как больших (ноги и&nbsp;спина),
+						а&nbsp;так&nbsp;же более мелких&nbsp;&mdash; шея, руки.
+					</p>
+				</div>
+
+				<input class="hide" id="hd-3" type="checkbox">
+				<label for="hd-3">FUNCTIONAL + STRETCHING</label>
+				<div class="opisanie">
+					<p class="trainings">
+						Функциональная тренировка, направлена на&nbsp;развитие всех двигательных качеств тела. Работа
+						с&nbsp;силой, гибкостью, балансом и&nbsp;выносливостью.<br />
+						<br> 25&ndash;30&nbsp;минут длится активная часть и&nbsp;25&ndash;30 растяжка всех мышц. Для
+						этой тренировки, вам понадобятся кроссовки.
+					</p>
+
+					<button class="button-me zoom trainings-my-video-btn" id="my-video-btn">
+						<i class="fas fa-play"></i> PLAY
+					</button>
+					<button class="button-me zoom trainings-my-video-btn2" id="my-video-btn">
+						<i class="fas fa-play"></i> PLAY
+					</button>
+
+				</div>
+			</div>
+		</div>
+	</span>
+
+	<!--формат тренировок-->
+	<span id="format">
+		<div class="container">
+			<h1 class="mobile-title">Выбери свой формат тренировки</h1>
+			<div class="training-format">
+				<div class="training-home">
+					<h3 class="training-format-title">Персональная тренировка</h3>
+					<img class="training-format-foto" src="foto/format/IMG_2305-1.jpg"
+						alt="фото персональной тренировки">
+					<button class="button-me training-format-btn btn-modal-personal zoom" data-aos="flip-left"
+						id="modal-personal-btn">Подробнее</button>
+				</div>
+
+				<div class="training-studio">
+					<h3 class="training-format-title">Груповая теренировка</h3>
+					<img class="training-format-foto" src="foto/format/IMG_2170.jpg" alt="фото груповой тренировки">
+					<button class="button-me training-format-btn btn-modal-group zoom" data-aos="flip-left"
+						id="modal-group-btn">Подробнее</button>
+				</div>
+			</div>
+		</div>
+	</span>
+
+	<!--Расписание Занятий-->
+	<span id="timetable">
+		<div class="container">
+			<h1 class="mobile-title">Расписание Занятий</h1>
+			<div class="timetable-info">
+				<img class="timetable-foto-info" src="foto/image7-removebg.png" alt="фото сидя">
+				<!-- <div class="timetable-info-content"> -->
+				<p class="timetable-info-content-text"> Занятия проходят утром и&nbsp;вечером, <nobr>по-этому</nobr>
+					ты&nbsp;всегда сможешь выбрать удобное время для тренировок.</p>
+
+				<div class="desktop-element">
+					<p class="timetable-info-content-contact">Переходи в теллеграм-канал
+						<a class="zoom" href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v"
+							style="color:  rgb(161, 47, 62); text-decoration: none;">
+							<em>BODY Stretching</em></a>
+						или звони по номеру
+						<a class="zoom" href="tel:+380953377856"
+							style="color:  rgb(161, 47, 62); text-decoration: none;">
+							<em>+38 (095) 337 78 56</em></a>
+						и я расскажу тебе подробней о рассписании.
+					</p>
+				</div>
+				<div class="mobile-element tablet-element">
+					<p class="timetable-info-content-contact"><br> Переходи в теллеграм-канал
+						<a class="zoom" href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v"
+							style="color:  rgb(161, 47, 62); text-decoration: none;">
+							<br><br><em>BODY Stretching</em></a>
+						или звони по номеру
+						<a class="zoom" href="tel:+380953377856"
+							style="color:  rgb(161, 47, 62); text-decoration: none;">
+							<br> <em>+38 (095) 337 78 56</em></a>
+						и я расскажу тебе подробней о рассписании.
+					</p>
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</span>
+
+	<!--стоимость абонов-->
+	<span id="price-content">
+		<div class="container">
+			<h1 class="price mobile-title">Стоимость занятий</h1>
+			<div class="one-trainings">
+				<ul>
+					<li class="dot-item">
+						<p>Пробная тренировка ----------- 150 грн.</p>
+					</li>
+					<li class="dot-item">
+						<p>Разовая тренировка ----------- 250 грн.</p>
+					</li>
+					<li class="dot-item">
+						<p>Персональная тренировка --- 650 грн.</p>
+					</li>
+					<li class="dot-item">
+						<p>Сплит тренировка -------------- 850 грн.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="abon">
+				<div class="wrap-personal">
+					<h3>Абонемент Персональная тренировка</h3>
+					<div class="price-abon">
+						<ul>
+							<li class="dot-item">
+								<p class="point">4 тренировки - 2400 грн.</p>
+							</li>
+							<li class="dot-item">
+								<p class="point">8 тренировок - 4600 грн.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrap-group">
+					<h3 class="split-group">Абонемент Груповая тренировка</h3>
+					<div class="price-abon">
+						<ul>
+							<li class="dot-item">
+								<p>4 тренировки - 850 грн.</p>
+							</li>
+							<li class="dot-item">
+								<p>6 тренировок - 1200 грн.</p>
+							</li>
+							<li class="dot-item">
+								<p>8 тренировок - 1500 грн.</p>
+							</li>
+							<li class="dot-item">
+								<p>12 тренировок - 2000 грн.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrap-split">
+					<h3 class="split-group">Абонемент Сплит тренировка</h3>
+					<div class="price-abon">
+						<ul>
+							<li class="dot-item">
+								<p>4 тренировки - 3000 грн.</p>
+							</li>
+							<li class="dot-item">
+								<p>8 тренировок - 5600 грн.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</span>
+
+	<!--фотогалерея-карусель-->
+	<span id="gallary">
+		<div class="container">
+			<h1 class="mobile-title">Фотогалерея</h1>
+			<div class="content-gallary">
+				<figure class="photo">
+					<a href="foto/galery/IMG_8273.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8273.JPG" alt="фото продольного шпагата">
+					</a>
+					<figcaption> 1 </figcaption>
+				</figure>
+				<figure class="photo">
+					<a href="foto/galery/IMG_8274.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8274.JPG" alt="фото продольний шпагат">
+					</a>
+					<figcaption>2</figcaption>
+				</figure>
+				<figure class="photo">
+					<a href="foto/galery/IMG_8275.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8275.JPG" alt="фото корректировки продольного шпагата">
+					</a>
+					<figcaption> 3 </figcaption>
+				</figure>
+				<figure class="photo">
+					<a href="foto/galery/IMG_8276.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8276.JPG" alt="фото корректировки продольного шпагата">
+					</a>
+					<figcaption> 4 </figcaption>
+				</figure>
+				<figure class="photo">
+					<a href="foto/galery/IMG_8277.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8277.JPG" alt="фото шпагат стоя">
+					</a>
+					<figcaption> 5 </figcaption>
+				</figure>
+				<figure class="photo">
+					<a href="foto/galery/IMG_8278.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8278.JPG" alt="фото груповой тренировки">
+					</a>
+					<figcaption> 6 </figcaption>
+				</figure>
+				<figure class="photo">
+					<a href="foto/galery/IMG_8279.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8279.JPG" alt="фото мостик">
+					</a>
+					<figcaption> 7</figcaption>
+				</figure>
+				<figure class="photo">
+					<a href="foto/galery/IMG_8280.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8280.JPG" alt="фото поперечного шпагата">
+					</a>
+					<figcaption> 8</figcaption>
+				</figure>
+				<figure class="photo">
+					<a href="foto/galery/IMG_8281.JPG" data-lightbox="roadtrip">
+						<img src="foto/galery/IMG_8281.JPG" alt="фота результата месяца занятий">
+					</a>
+					<figcaption>9 </figcaption>
+				</figure>
+			</div>
+		</div>
+	</span>
+
+	<!-- review -->
+	<span class="container">
+		<div class="swiper-container" id="review">
+
+			<h1 class="mobile-title review-title">Отзывы</h1>
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<img src="foto/review/Screenshot_20210223-114052_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
+				<img src="foto/review/Screenshot_20210223-113241_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
+				<img src="foto/review/Screenshot_20210223-113615_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
+				<img src="foto/review/Screenshot_20210223-113620_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
+				<img src="foto/review/Screenshot_20210223-113610_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
+				<img src="foto/review/photo_2021-05-24_20-03-47.jpg" class="swiper-slide" alt="фото отзыв">
+				<img src="foto/review/photo_2021-05-24_20-03-48.jpg" class="swiper-slide" alt="фото отзыв">
+				<img src="foto/review/photo_2021-05-24_20-03-49 (2).jpg" class="swiper-slide" alt="фото отзыв">
+				<img src="foto/review/photo_2021-05-24_20-03-49.jpg" class="swiper-slide" alt="фото отзыв">
+
+			</div>
+			<!-- If we need pagination  -->
+			<br>
+			<div class="swiper-pagination"></div>
+
+			<!-- If we need navigation buttons -->
+			<div class="desktop-element swiper-button-prev navigation-swiper-button-prev"></div>
+			<div class="desktop-element swiper-button-next navigation-swiper-button-next"></div>
+		</div>
+
+	</span>
+
+	<!--как найти-->
+	<span id="all-contacts">
+		<div class="container">
+			<h1 class="mobile-title">Как нас найти</h1>
+			<div class="all-contacts-wrap">
+				<div class="contacts">
+					<div>
+						<p>Адрес <br> метро Печерск, Коновальца 36Д,<br> бизнес центр Волна</p>
+					</div>
+					<div>
+						<a href="tel:+380953377856" style="color: white;">+38 (095) 337 78 56 - Анна</a>
+					</div>
+					<div class="social-networks">
+						<a href="https://www.facebook.com/stretch.house.7" target="blank"><i
+								class="fab fa-facebook-square"></i></a>
+						<a href="https://www.instagram.com/stretching.body/?igshid=1imlp4lmj8wev" target="blank"> <i
+								class="fab fa-instagram-square"></i></a>
+						<a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" target="blank"><i
+								class="fab fa-telegram"></i></a>
+					</div>
+				</div>
+
+				<div id="our-map">
+					<div id="map">
+					</div>
+					<div id="myMap"></div>
+					<script>
+						function myMap() {
+							var mapCanvas = document.getElementById("map");
+							var mapOptions = {
+								center: new google.maps.LatLng(50.427951414043925, 30.533590807133987),
+								zoom: 15
+							};
+
+							var map = new google.maps.Map(mapCanvas, mapOptions);
+							var marker = new google.maps.Marker({
+								position: mapOptions,
+								map: myMap,
+								icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+								title: "Мы здесь"
+							});
+						}
+					</script>
+					<script
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCQKTmCqmmfvo_fFCQlJMhmpQsvVr7mjE&callback=myMap"></script>
+				</div>
+			</div>
+			<footer style="text-align: center;">
+				<p>© 2021 OLGA KHOMENKO. Все права защищены</p>
+			</footer>
+		</div>
+	</span>
+
+	<!-- MODALS -->
+	<div class="modalwin-wrapper">
+		<!-- modal-menu -->
+		<div id="mobile-menu" class="modalwin modal-slider modal-mobile-menu modal-area-bgd">
+			<div class="modal-mobile-content">
+				<div class="container mobile-menu-container">
+					<i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
+					<nav class="mobile-menu-items">
+						<a href="#all-trainings">Описание тренировок</a>
+						<a href="#format">Формат тренировок</a>
+						<a href="#timetable">Рассписание</a>
+						<a href="#price-content">Стоимость</a>
+						<a href="#gallary">Фотогалерея</a>
+						<a href="#review">Отзывы</a>
+						<a href="#all-contacts">Как нас найти</a>
+					</nav>
+
+					<div class="mobile-menu-contacts">
+						<a class="number" href="tel:+380953377856">+38 (095) 337 78 56 - Анна</a>
+					</div>
+					<div class="mobile-menu-icons">
+						<a href="https://www.facebook.com/stretch.house.7" target="blank"><i
+								class="fab fa-facebook-square"></i></a>
+						<a href="https://www.instagram.com/stretching.body/?igshid=1imlp4lmj8wev" target="blank"> <i
+								class="fab fa-instagram-square"></i></a>
+						<a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v" target="blank"><i
+								class="fab fa-telegram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- MY VIDEO -->
+		<div class="modalwin modal-area-bgd" id="my-video-modal">
+			<div class="my-video-container">
+				<i class="fas fa-times modal-close-btn"></i>
+				<video style="outline-style:none;" controls preload loop class="my-video-content modal-area-content"
+					src="video/InShot_20210219_200115916.mp4">
+				</video>
+			</div>
+		</div>
+		<!-- modal slaider -->
+		<div id="modal-slider" class="modalwin modal-slider modal-area-bgd">
+			<div class="modal-slider-content">
+				<div class="container modal-slider-container">
+					<i class="fas fa-times modal-close-btn modal-slider-close-btn"></i>
+					<!-- <img class="desktop-element" src="foto/IMG_0480)).jpg" alt="шпагат"> -->
+					<div class="modal-slider-container-mobile ">
+
+						<p> Меня зовут <b>Анна Лапыгина</b> и я сертифицированый тренер по стретчингу, функциональному,
+							силовому и интервальному тренингу.
+							<br> <br>Участница Nike Convention 2019, Profit Convention 2020, а так же различных
+							мастер-классов и воркшопов.
+							<br><br>Так же прошла обучающий курс по нутриционному сопровождению: контроль, снижение и
+							набор массы тела.
+							<br><br>Имею международную сертификацию по фасциальному тренингу и стретчингу, а так же по
+							фасциальной ходьбе(Concept-Rossmann - Германия).
+							<br><br>Имею опыт работы более 3-х лет и как знают мои клиенты - я очень люблю свою работу.
+							<br><br>В сфере спорта я уже 10 лет,но ещё в детстве узнала что такое растяжка и шпагат.
+							<br><br>С 15-ти летнего возраста начала активно заниматься спортом: тренажёрный зал,
+							аэробика, осваивала разные направления фитнеса и уже в 18 лет работала фитнес-тренером.
+							<br><br>Так же занималась различными танцевальными направлениями и я уверена,что наше тело
+							создано для того чтобы двигаться!
+						</p>
+					</div>
+					<!--
+						<p class="desktop-element content-modal-win-text">Меня зовут <b>Анна Лапыгина</b> и я сертифицированый тренер по стретчингу, функциональному, силовому и интервальному тренингу.</p>
+						<p class="desktop-element content-modal-win-text-two"> Участница Nike Convention 2019, Profit Convention 2020, а так же различных мастер-классов и воркшопов.
+							Так же прошла обучающий курс по нутриционному сопровождению: контроль, снижение и набор массы тела.</p>
+						<p class="desktop-element content-modal-win-text-three">Имею международную сертификацию по фасциальному тренингу и стретчингу, а так же по фасциальной ходьбе(Concept-Rossmann - Германия).</p>
+						<p class="desktop-element content-modal-win-text-four">Имею опыт работы более 3-х лет и как знают мои клиенты - я очень люблю свою работу. </p> 
+						<p class="desktop-element content-modal-win-text-five">В сфере спорта я уже 10 лет,но ещё в детстве узнала что такое растяжка и шпагат.</p> 
+						<p class="desktop-element content-modal-win-text-six">С 15-ти летнего возраста начала активно заниматься спортом: тренажёрный зал, аэробика, осваивала разные направления фитнеса и уже в 18 лет работала фитнес-тренером.</p> 
+						<p class="desktop-element content-modal-win-text-seven">Так же занималась различными танцевальными направлениями и я уверена,что наше тело создано для того чтобы двигаться! </p>
+							<span class="desktop-element content-modal-win-text-eight">Правильное движение даёт энергию, а энергия - ещё больше движения!</span> -->
+
+				</div>
+			</div>
+		</div>
+
+		<!-- modal-personal-->
+		<div class="modalwin modal-personal modal-area-bgd" id="modal-personal">
+			<div class="modal-personal-content">
+				<i class="fas fa-times modal-close-btn modal-personal-close-btn"></i>
+				<p>Результативность персональных занятий очень высока, поскольку всё внимание тренер уделяем
+					исключительно Вам. Это индивидуальный подход и составление плана тренировок под ваши цели и ваши
+					особенности.
+					На занятиях стретчингом, одним из методов является - пассивный стретчинг, при котором тренерующийся
+					может максимумально расслабиться и получить самый лучший результат от растяжки.
+					На функциональных занятиях работаем комплексно над всем телом, при этом делая акцент на ваши самые "
+					проблемные" зоны.
+					Персональные занятия проходят по индивидуальному графику, который вы лично составляете с тренером.
+					Узнать стоимость можно здесь.</p>
+			</div>
+		</div>
+		<!-- modal-group -->
+		<div class="modalwin modal-group modal-area-bgd" id="modal-group">
+			<div class="modal-group-content">
+				<i class="fas fa-times modal-close-btn modal-group-close-btn"></i>
+				<p>Результативность персональных занятий очень высока, поскольку всё внимание тренер уделяем
+					исключительно Вам. Это индивидуальный подход и составление плана тренировок под ваши цели и ваши
+					особенности. На занятиях стретчингом, одним из методов является - пассивный стретчинг, при котором
+					тренерующийся может максимумально расслабиться и получить самый лучший результат от растяжки. На
+					функциональных занятиях работаем комплексно над всем телом, при этом делая акцент на ваши самые "
+					проблемные" зоны. Персональные занятия проходят по индивидуальному графику, который вы лично
+					составляете с тренером. Узнать стоимость можно здесь.</p>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+	<script src="js/script.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/animation-on-scroll.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/myMap.js"></script>
+
+
+</body>
+
 </html>
