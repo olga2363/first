@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/aos.css">
 	<link rel="stylesheet" href="style/swiper.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 	<link href="style/lightbox.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -22,10 +24,10 @@
 		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> -->
 	<script src="https://kit.fontawesome.com/500639fc35.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
@@ -35,7 +37,7 @@
 <header class="header">
 	<div class="container">
 		<div class="header__inner">
-			<img class="logo zoom" href="#logo" src="foto/logo.png" alt="">
+			<img class="logo zoom" href="#logo" src="foto/logo.jpg" alt="">
 			<nav class="header__nav desktop-element">
 				<ul>
 					<li>
@@ -193,19 +195,19 @@
 	<span id="format">
 		<div class="container">
 			<h1 class="mobile-title">Выбери свой формат тренировки</h1>
-			<div class="training-format">
-				<div class="training-home">
-					<h3 class="training-format-title">Персональная тренировка</h3>
-					<img class="training-format-foto" src="foto/format/IMG_2305-1.jpg"
-						alt="фото персональной тренировки">
-					<button class="button-me training-format-btn btn-modal-personal zoom" data-aos="flip-left"
+			<div class="format__training">
+				<div class="format__training-home">
+					<h3 class="format__training-title">Персональная тренировка</h3>
+					<img class="format__training-foto" src="foto/format/IMG_2305-1.jpg"
+						alt="фото персональной тренировки ">
+					<button class="button-me format__training-btn btn-modal-personal zoom" data-aos="flip-left"
 						id="modal-personal-btn">Подробнее</button>
 				</div>
 
-				<div class="training-studio">
-					<h3 class="training-format-title">Груповая теренировка</h3>
-					<img class="training-format-foto" src="foto/format/IMG_2170.jpg" alt="фото груповой тренировки">
-					<button class="button-me training-format-btn btn-modal-group zoom" data-aos="flip-left"
+				<div class="format__training-studio">
+					<h3 class="format__training-title">Груповая теренировка</h3>
+					<img class="format__training-foto" src="foto/format/IMG_2170.jpg" alt="фото груповой тренировки">
+					<button class="button-me format__training-btn btn-modal-group zoom" data-aos="flip-left"
 						id="modal-group-btn">Подробнее</button>
 				</div>
 			</div>
@@ -216,32 +218,30 @@
 	<span id="timetable">
 		<div class="container">
 			<h1 class="mobile-title">Расписание Занятий</h1>
-			<div class="timetable-info">
-				<img class="timetable-foto-info" src="foto/image7-removebg.png" alt="фото сидя">
+			<div class="timetable__info">
+				<img class="timetable__foto" src="foto/image7-removebg.png" alt="фото сидя">
 				<!-- <div class="timetable-info-content"> -->
-				<p class="timetable-info-content-text"> Занятия проходят утром и&nbsp;вечером, <nobr>по-этому</nobr>
+				<p class="timetable__info__text"> Занятия проходят утром и&nbsp;вечером, <nobr>по-этому</nobr>
 					ты&nbsp;всегда сможешь выбрать удобное время для тренировок.</p>
 
 				<div class="desktop-element">
-					<p class="timetable-info-content-contact">Переходи в теллеграм-канал
-						<a class="zoom" href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v"
+					<p class="timetable__info__contact">Переходи в теллеграм-канал
+						<a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v"
 							style="color:  rgb(161, 47, 62); text-decoration: none;">
 							<em>BODY Stretching</em></a>
 						или звони по номеру
-						<a class="zoom" href="tel:+380953377856"
-							style="color:  rgb(161, 47, 62); text-decoration: none;">
+						<a href="tel:+380953377856" style="color:  rgb(161, 47, 62); text-decoration: none;">
 							<em>+38 (095) 337 78 56</em></a>
 						и я расскажу тебе подробней о рассписании.
 					</p>
 				</div>
 				<div class="mobile-element tablet-element">
-					<p class="timetable-info-content-contact"><br> Переходи в теллеграм-канал
-						<a class="zoom" href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v"
+					<p class="timetable__info__contact"><br> Переходи в теллеграм-канал
+						<a href="https://t.me/joinchat/Sq4VIDlV2a1b2A3v"
 							style="color:  rgb(161, 47, 62); text-decoration: none;">
 							<br><br><em>BODY Stretching</em></a>
 						или звони по номеру
-						<a class="zoom" href="tel:+380953377856"
-							style="color:  rgb(161, 47, 62); text-decoration: none;">
+						<a href="tel:+380953377856" style="color:  rgb(161, 47, 62); text-decoration: none;">
 							<br> <em>+38 (095) 337 78 56</em></a>
 						и я расскажу тебе подробней о рассписании.
 					</p>
@@ -321,7 +321,7 @@
 		</div>
 	</span>
 
-	<!--фотогалерея-карусель-->
+	<!--фотогалерея-карусель
 	<span id="gallary">
 		<div class="container">
 			<h1 class="mobile-title">Фотогалерея</h1>
@@ -382,13 +382,50 @@
 				</figure>
 			</div>
 		</div>
+	</span>-->
+	<span id="gallary">
+		<div class="container">
+			<h1 class="mobile-title">Фотогалерея</h1>
+			<div class="swiper-container">
+
+				<!-- <h1 class="mobile-title review-title">Отзывы</h1> -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<img src="foto/galery/IMG_8273.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+					<img src="foto/galery/IMG_8274.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+					<img src="foto/galery/IMG_8275.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+					<img src="foto/galery/IMG_8276.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+					<img src="foto/galery/IMG_8277.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+					<img src="foto/galery/IMG_8278.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+					<img src="foto/galery/IMG_8279.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+					<img src="foto/galery/IMG_8280.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+					<img src="foto/galery/IMG_8281.JPG" alt="фото продольного шпагата"
+						class="swiper-slide gallary__img">
+				</div>
+				<!-- If we need pagination  -->
+				<br>
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="desktop-element swiper-button-prev navigation-swiper-button-prev"></div>
+				<div class="desktop-element swiper-button-next navigation-swiper-button-next"></div>
+			</div>
+		</div>
 	</span>
 
 	<!-- review -->
 	<span class="container">
-		<div class="swiper-container" id="review">
+		<h1 class="mobile-title review-title">Отзывы</h1>
 
-			<h1 class="mobile-title review-title">Отзывы</h1>
+		<div class="swiper-container" id="review">
 			<div class="swiper-wrapper">
 				<!-- Slides -->
 				<img src="foto/review/Screenshot_20210223-114052_Instagram.jpg" class="swiper-slide" alt="фото отзыв">
@@ -586,7 +623,7 @@
 	<script src="js/slider.js"></script>
 	<script src="js/aos.js"></script>
 	<script src="js/animation-on-scroll.js"></script>
-	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<!-- <script src="js/lightbox-plus-jquery.min.js"></script> -->
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/myMap.js"></script>
