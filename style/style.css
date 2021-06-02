@@ -36,7 +36,6 @@ body {
 }
 .logo{
 background: none;
-/* width: 100px; */
 height: 45px;
 border-radius: 50%;
 cursor: pointer;
@@ -65,7 +64,6 @@ cursor: pointer;
   background-color: inherit;
   color: var(--txt-c-base-light);
 }
-
 
 .container {
   min-width: 320px;
@@ -126,7 +124,6 @@ cursor: pointer;
   /* font-family: var(--font-txt); */
   background-color: inherit;
   color: var(--txt-c-base-light);
-  /* font-style: var(--font-txt); */
   border-radius: 10px;
   background-color: Transparent;
   background-repeat: no-repeat;
@@ -136,6 +133,9 @@ cursor: pointer;
 .button-me:hover {
   background-color: none;
   outline-style: none;
+  outline: 1px solid white;
+  color: var(--txt-c-base-light);
+  background-color: var(--txt-c-base-dark);
 }
 
 /* modals */
@@ -165,8 +165,8 @@ cursor: pointer;
 .modal-close-btn {
   font-size: 18px;
   position: absolute;
-  top: 7%;
-  right: 7%;
+  top: 5%;
+  right: 10%;
   cursor: pointer;
 }
 
@@ -364,12 +364,6 @@ cursor: pointer;
   margin-bottom: 5px;
 }
 
-/* .slide-text-two-second-btn{
-    width: 110px;
-    height: auto;
-    padding: 2px;
-    }
-     */
 .slide-text-two-second-btn:focus {
   text-decoration: none;
   outline-style: none;
@@ -410,7 +404,6 @@ cursor: pointer;
   z-index: 9;
 }
 
-/* modal slaider */
 .modal-slider {
   display: flex;
   height: 100%;
@@ -454,13 +447,22 @@ cursor: pointer;
   top: 5%;
 }
 
-.mobile-title {
+.primery-title {
   text-align: center;
   /* font-family: var(--font-main); */
   text-align: center;
   color: var(--txt-c-base-dark);
-  margin: 25px;
-  font-size: 30px;
+  margin: 75px 25px 25px 25px;
+  font-size: 25px;
+}
+
+.secondary-title{
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  word-spacing: 1.5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 /*Описание тренировок*/
@@ -469,23 +471,11 @@ cursor: pointer;
   margin-bottom: 100px;
 }
 
-#all-trainings > h1 {
-  text-align: center;
-  font-family: var(--font-main);
-  text-align: center;
-  color: var(--txt-c-base-dark);
-  margin: 25px;
-  margin-top: 25px;
-  font-size: 50px;
-}
-
-/* скрываем чекбоксы и блоки с содержанием */
 .hide,
 .hide + label ~ div {
   display: none;
 }
 
-/* вид текста label */
 .hide + label {
   width: 100%;
   margin-top: 25px;
@@ -522,12 +512,10 @@ cursor: pointer;
   word-spacing: 1px;
   line-height: 32px;
   text-align: justify;
-  /* font-family: Arial, Helvetica, sans-serif; */
   display: flex;
   flex-direction: row;
 }
 
-/* вид текста label при активном переключателе */
 .hide:checked + label {
   width: 100%;
   padding: 5px 20px;
@@ -539,7 +527,6 @@ cursor: pointer;
   background: var(--txt-c-base-dark);
 }
 
-/* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + div {
   display: flex;
   width: 100%;
@@ -554,13 +541,11 @@ cursor: pointer;
   flex-direction: column;
   align-items: center;
 
-  /* анимациz при появлении */
   -webkit-animation: fade ease-in 0.5s;
   -moz-animation: fade ease-in 0.5s;
   animation: fade ease-in 0.5s;
 }
 
-/* анимация при появлении скрытых блоков */
 @-moz-keyframes fade {
   from {
     opacity: 02;
@@ -618,29 +603,15 @@ cursor: pointer;
 /* video-btn */
 .trainings-my-video-btn {
   border: 2px solid var(--c-base-dark);
-  color: var(--txt-c-base-dark);
-  background: transparent;
-  padding: 10px 40px;
-  margin-bottom: 20px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-shadow: rgb(184, 18, 184) 1px 0 10px;
-  transition: var(--animation-transition);
-}
-.trainings-my-video-btn2 {
-  border: 2px solid var(--c-base-dark);
-  /* color: var(--txt-c-dark-grey); */
   color: var(--txt-c-base-light);
-  font-style: var(--font-txt);
-  border-radius: 10px;
-  padding: 10px 40px;
+  background: transparent;
+  padding: 5px 40px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-bottom: 20px;
-
+  transition: var(--animation-transition);
+  border-radius: 10px;
   background: rgba(12, 12, 11, 0.4);
 }
 
@@ -651,13 +622,18 @@ cursor: pointer;
 }
 
 .my-video-container {
-  padding-top: 80px;
   width: 100%;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  height: 100%;
+  z-index: 8;
 }
 
 .my-video-container > video {
-  max-width: 95%;
+  max-width: 100%;
+  position: relative;
 }
 
 /* modal personal */
@@ -705,10 +681,6 @@ cursor: pointer;
   font-size: 17px;
 }
 
-/* .split-group{
-    margin-bottom: 40px;
-    } */
-
 .foto-trail {
   text-align: center;
 }
@@ -739,19 +711,16 @@ cursor: pointer;
   color: var(--txt-c-base-dark);
 }
 
-.wrap-personal > h3,
+
+/* .wrap-personal > h3,
 .wrap-group > h3,
 .wrap-split > h3 {
   text-align: center;
   box-sizing: border-box;
-  /* font-family: var(--font-txt); */
+  /* font-family: var(--font-txt); 
   color: var(--txt-c-base-dark);
-  font-size: 25px;
-  letter-spacing: 1.5px;
-  word-spacing: 1.5px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
+} */
+
 .price-abon > p {
   text-align: left;
   box-sizing: border-box;
@@ -821,14 +790,13 @@ cursor: pointer;
 }
 
 /* формат тренировок */
-#format > h1 {
+/* #format > h1 {
   text-align: center;
-  /* font-family: var(--font-main); */
   text-align: center;
   color: var(--txt-c-base-dark);
   margin: 25px;
   font-size: 50px;
-}
+} */
 
 .format__training {
   text-align: right;
@@ -836,13 +804,11 @@ cursor: pointer;
   width: 100%;
   height: auto;
 }
+
 .format__training-title {
-  /* font-family: var(--font-txt); */
   color: var(--txt-c-base-light);
   background-color: var(--c-base-dark);
   border-bottom: 3px solid silver;
-  text-align: center;
-  font-size: 20px;
   padding: 10px;
   margin: 0;
 }
@@ -999,14 +965,12 @@ cursor: pointer;
   margin-bottom: 20px;
 }
 
-.review-title {
+/* .review-title {
   text-align: center;
-  /* font-family: var(--font-main); */
   text-align: center;
   color: var(--txt-c-base-dark);
   margin: 40px;
-  /* font-size: 50px; */
-}
+} */
 
 /*контакты*/
 
@@ -1231,21 +1195,18 @@ cursor: pointer;
     width: 100%;
   }
 
-  /* .stretching-body {
-    color: var(--txt-c-base-light);
-    font-family: var(--font-main);
-    text-align: center;
-    align-items: center;
-    display: flex;
-    margin-left: 10px;
-    font-size: 17px;
-    margin-right: 20px;
-  } */
+.primery-title {
+  font-size: 50px;
+  margin-top: 150px;
+}
+.secondary-title{
+  font-size: 28px;
+}
 
-  .stretching-body a {
-    color: var(--c-light);
-    text-decoration: none;
-  }
+.stretching-body a {
+  color: var(--c-light);
+  text-decoration: none;
+}
 
   .stretching-body a:hover {
     color: var(--c-light);
@@ -1343,15 +1304,7 @@ cursor: pointer;
   }
 
   /*Описание тренировок*/
-  .description-of-trainings {
-    width: 100%;
-    text-align: center;
-    /* font-family: var(--font-main); */
-    color: var(--txt-c-base-dark);
-    margin: 25px;
-    margin-top: 25px;
-    font-size: 50px;
-  }
+
 
   .description-of-trainings-content {
     text-align: start;
@@ -1400,15 +1353,14 @@ cursor: pointer;
     width: 100%;
   }
 
-  .container > h1 {
+  /* .container > h1 {
     text-align: left;
-    /* font-family: var(--font-main); */
     text-align: center;
     color: var(--txt-c-base-dark);
     margin-top: 80px;
     margin-bottom: 50px;
     font-size: 50px;
-  }
+  } */
 
   .timetable__foto {
     width: auto;
@@ -1520,7 +1472,7 @@ cursor: pointer;
     justify-content: center;
   }
 
-  .wrap-personal > h3,
+  /* .wrap-personal > h3,
   .wrap-group > h3,
   .wrap-split > h3 {
     text-align: center;
@@ -1529,7 +1481,7 @@ cursor: pointer;
     font-size: 35px;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
-  }
+  } */
 
   .price-abon > p {
     text-align: left;
