@@ -622,18 +622,18 @@ cursor: pointer;
 }
 
 .my-video-container {
-  width: 100%;
-  justify-content: center;
+  background-color: var(--c-base-light);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
-  height: 100%;
-  z-index: 8;
+  z-index: 9;
 }
 
 .my-video-container > video {
-  max-width: 100%;
-  position: relative;
+  max-width: 90%;
+  padding: 70px;
+  margin: 0 auto;
 }
 
 /* modal personal */
@@ -646,12 +646,6 @@ cursor: pointer;
   top: 20%;
   text-align: center;
   padding-top: 70px;
-}
-
-.btn-modal-personal {
-  position: fixed;
-  bottom: 100px;
-  /* background-color: var(--c-light-grey); */
 }
 
 /* стоимость абоабонов*/
@@ -674,7 +668,7 @@ cursor: pointer;
 }
 
 .dot-item {
-  color: rgb(161, 47, 62);
+  color: var(--c-base-dark);
   border-radius: 50%;
   transition: background-color 40s ease;
   margin-left: 0px;
@@ -710,16 +704,6 @@ cursor: pointer;
   /* font-family: sans-serif; */
   color: var(--txt-c-base-dark);
 }
-
-
-/* .wrap-personal > h3,
-.wrap-group > h3,
-.wrap-split > h3 {
-  text-align: center;
-  box-sizing: border-box;
-  /* font-family: var(--font-txt); 
-  color: var(--txt-c-base-dark);
-} */
 
 .price-abon > p {
   text-align: left;
@@ -758,7 +742,6 @@ cursor: pointer;
   width: 308px;
   padding-left: 135px;
   font-family: sans-serif;
-  /* text-indent: 20px; */
   margin-bottom: 0;
   text-align: center;
   padding-top: 13px;
@@ -769,12 +752,9 @@ cursor: pointer;
   font-size: 16px;
   width: 308px;
   padding-left: 135px;
-  /* font-family: sans-serif; */
   text-indent: 20px;
   text-align: center;
   padding-top: 4px;
-  /* position: fixed;
-    z-index: 5; */
 }
 
 .timetable__info__contact > a:hover,
@@ -790,14 +770,6 @@ cursor: pointer;
 }
 
 /* формат тренировок */
-/* #format > h1 {
-  text-align: center;
-  text-align: center;
-  color: var(--txt-c-base-dark);
-  margin: 25px;
-  font-size: 50px;
-} */
-
 .format__training {
   text-align: right;
   align-items: center;
@@ -814,7 +786,6 @@ cursor: pointer;
 }
 
 .format__training-foto {
-  /* height: 200px; */
   height: auto;
   width: 100%;
   object-fit: cover;
@@ -834,36 +805,17 @@ cursor: pointer;
 
 .btn-modal-group,
 .btn-modal-personal {
-  /*font-family: var(--font-txt);
-   color: var(--c-dark-grey); */
   bottom: 44px;
   position: relative;
   background: rgba(12, 12, 11, 0.4);
   font-size: 15px;
-  /* font-size: 23px; */
+ 
 }
 
 .format__training-studio {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
-/* .studio,
-.home {
-  width: 250px;
-  height: 80px;
-  position: absolute;
-  color: var(--txt-c-base-light);
-  margin-top: 110px;
-  margin-left: 250px;
-  font-size: 40px;
-}
-
-.studio:focus,
-.home:focus {
-  background-color: none;
-  outline-style: none;
-} */
 
 .close {
   color: var(--txt-c-base-light);
@@ -1273,7 +1225,7 @@ cursor: pointer;
     height: auto;
     right: 55px;
     color: var(--txt-c-base-dark);
-    font-size: 35px;
+    font-size: 30px;
     padding: 8px 12px;
     position: absolute;
     top: 9%;
@@ -1352,15 +1304,6 @@ cursor: pointer;
   .timetable__info {
     width: 100%;
   }
-
-  /* .container > h1 {
-    text-align: left;
-    text-align: center;
-    color: var(--txt-c-base-dark);
-    margin-top: 80px;
-    margin-bottom: 50px;
-    font-size: 50px;
-  } */
 
   .timetable__foto {
     width: auto;
@@ -1472,17 +1415,6 @@ cursor: pointer;
     justify-content: center;
   }
 
-  /* .wrap-personal > h3,
-  .wrap-group > h3,
-  .wrap-split > h3 {
-    text-align: center;
-    box-sizing: border-box;
-    color: var(--txt-c-base-dark);
-    font-size: 35px;
-    letter-spacing: 1.5px;
-    word-spacing: 1.5px;
-  } */
-
   .price-abon > p {
     text-align: left;
     box-sizing: border-box;
@@ -1506,48 +1438,13 @@ cursor: pointer;
     line-height: 45px;
   }
 
-  /* gallary */
-  
-.swiper-container{
-  width: 600px;
-  height: 300px;
-}
-
-  /* #gallary {
-    margin-left: 100px;
-    margin-right: 100px;
-    height: auto;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #gallary > h1 {
-    text-align: center;
-    font-family: "Pacifico", Sans-serif;
-    text-align: center;
-    color: var(--txt-c-base-dark);
-    margin: 25px;
-    font-size: 50px;
-  }
-
-  .content-gallary {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .photo {
-    width: 33%;
-    float: left;
-    text-align: center;
-  } */
-
-  /* review */
   .swiper-container {
     margin-left: 100px;
     margin-right: 100px;
     height: 700px;
+    width: 600px;
+    margin-top: 70px;
+    margin-bottom: 150px;
   }
 
   /* как найти */
