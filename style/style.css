@@ -12,7 +12,7 @@
   --txt-c-base-light: var(--c-base-light);
 
   /* font */
-  --font-main: "Open Sans", sans-serif;
+  --font-main: 'Open Sans', sans-serif;
   --font-txt: "Caveat", cursive;
 
   /* container width */
@@ -29,11 +29,11 @@ html {
 
 body {
   margin: 0px auto;
-  font-family: var(--font-main);
   box-sizing: border-box;
   font-size: 15px;
   line-height: 27px;
 }
+
 .logo{
 background: none;
 height: 45px;
@@ -66,6 +66,7 @@ cursor: pointer;
 }
 
 .container {
+  font-family: var(--font-main);
   min-width: 320px;
   width: 100%;
   display: flex;
@@ -449,11 +450,12 @@ cursor: pointer;
 
 .primery-title {
   text-align: center;
-  /* font-family: var(--font-main); */
+  font-family: var(--font-main);
   text-align: center;
   color: var(--txt-c-base-dark);
   margin: 75px 25px 25px 25px;
   font-size: 25px;
+  font-weight: 600;
 }
 
 .secondary-title{
@@ -463,6 +465,7 @@ cursor: pointer;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+  font-weight: 400;
 }
 
 /*Описание тренировок*/
@@ -479,7 +482,8 @@ cursor: pointer;
 .hide + label {
   width: 100%;
   margin-top: 25px;
-  padding: 0 55px 0px 55px 0;
+  padding: 0 5px 0 5px;
+  /* padding: 0 55px 0px 55px 0; */
   color: var(--txt-c-base-dark);
   cursor: pointer;
   border-bottom: 3px solid silver;
@@ -491,6 +495,7 @@ cursor: pointer;
 .trainings {
   padding-left: 5px;
   font-size: 17px;
+  text-align: justify;
 }
 
 .opisanie-foto-shpagat {
@@ -518,7 +523,7 @@ cursor: pointer;
 
 .hide:checked + label {
   width: 100%;
-  padding: 5px 20px;
+  /* padding: 5px 20px; */
   cursor: pointer;
   font-size: 20px;
   letter-spacing: 1.5px;
@@ -530,7 +535,7 @@ cursor: pointer;
 .hide:checked + label + div {
   display: flex;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 25px; 
   padding: 0;
   color: var(--txt-c-base-dark);
   cursor: pointer;
@@ -580,23 +585,25 @@ cursor: pointer;
   color: var(--c-base-dark);
   float: right;
   font-size: 25px;
-  font-weight: bold;
+  /* font-weight: bold; */
   height: 16px;
-  line-height: 16px;
-  margin-left: 10px;
+  /* line-height: 16px; */
+  /* margin-left: 10px; */
   margin-right: 10px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   text-align: center;
-  line-height: initial;
+  /* line-height: initial; */
   width: 25px;
   height: 25px;
-  padding: 0 15px;
+  padding: 0 5px 0 5px;
+  /* padding: 0 15px; */
 }
 
 .hide:checked + label:before {
   content: "︽";
   font-size: 25px;
-  margin: 0px;
+  line-height: 16px;
+  margin-right: 10px;
   color: var(--txt-c-base-light);
 }
 
