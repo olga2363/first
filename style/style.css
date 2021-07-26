@@ -438,7 +438,7 @@ cursor: pointer;
   width: 100%;
   height: 100%;
   background: url("../foto/slider/IMG_5207\ —\ копия.JPG") center;
-  opacity: 0.4;
+  opacity: 0.3;
   background-size: cover;
   background-position: center;
 }
@@ -451,8 +451,8 @@ cursor: pointer;
   height: 100%;
   z-index: -1;
   opacity: 1;
-  color: var(--txt-c-base-dark);
-  /* background-color:  rgba(241, 244, 245, 0.4); */
+  color: black;
+  padding-top: 5%;
 }
 
 
