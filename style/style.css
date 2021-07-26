@@ -755,42 +755,59 @@ cursor: pointer;
 
 /*расписане тренировок*/
 
-.timetable__foto {
+/* .timetable__foto {
   display: flex;
   height: 400px;
   width: auto;
   margin-left: -30px;
   position: absolute;
   margin-top: 18px;
-}
+} */
 
+.timetable__info{
+ background-image: url("../foto/image7-removebg.png");
+  background-repeat: no-repeat;
+  background-size: auto 95%;
+  background-position: left;
+}
+.timetable__info__content{
+  max-width: 100%;
+  max-height: 100%;
+}
 .timetable__info__text {
   box-sizing: border-box;
   font-size: 16px;
-  width: 308px;
-  padding-left: 135px;
+   /* width: 308px;  */
+  /*padding-left: 150px;*/
   font-family: sans-serif;
   margin-bottom: 0;
   text-align: center;
-  padding-top: 13px;
+  padding-left: 115px;
+  text-indent: 20px;
+  text-align: center;
+  padding-top: 48px;
 }
 
 .timetable__info__contact {
   box-sizing: border-box;
   font-size: 16px;
-  width: 308px;
-  padding-left: 135px;
+  padding-left: 115px;
   text-indent: 20px;
   text-align: center;
-  padding-top: 4px;
+  padding-top: 48px;
+  /* width: 308px; */
+  /* padding-left: 150px;
+  text-indent: 20px;
+  text-align: center;
+  padding-top: 4px; */
 }
 
-.timetable__info__contact > a:hover,
+/* .timetable__info__contact > a:hover,
 .timetable__info__contact > a:hover {
   cursor: pointer;
-  text-shadow: rgb(184, 18, 184) 1px 0 5px;
+  text-shadow: var(--c-accent) 1px 0 5px;
   font-size: 110%;
-}
+} */
 
 .carousel {
   height: 700px;
@@ -928,7 +945,7 @@ cursor: pointer;
 }
 
 .photo figcaption {
-  /* font-family: "Open Sans", sans-serif; */
+ font-family: "Open Sans", sans-serif; 
   color: #999999;
   text-align: center;
   margin-top: 20px;
@@ -949,13 +966,6 @@ cursor: pointer;
   object-position: center;
   margin-bottom: 20px;
 }
-
-/* .review-title {
-  text-align: center;
-  text-align: center;
-  color: var(--txt-c-base-dark);
-  margin: 40px;
-} */
 
 /*контакты*/
 
