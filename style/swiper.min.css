@@ -29,7 +29,11 @@
  .swiper-button-next.swiper-button-white,.swiper-button-prev.swiper-button-white{--swiper-navigation-color:#ffffff}
  .swiper-button-next.swiper-button-black,.swiper-button-prev.swiper-button-black{--swiper-navigation-color:#000000}
  .swiper-button-lock{display:none}
- .swiper-pagination{position:absolute;text-align:center;transition:.3s opacity;transform:translate3d(0,0,0);z-index:10}.swiper-pagination.swiper-pagination-hidden{opacity:0}.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:10px;left:0;width:100%}
+ .swiper-pagination{position:absolute;text-align:center;transition:.3s opacity;transform:translate3d(0,0,0);z-index:10}
+ .swiper-pagination.swiper-pagination-hidden{opacity:0}
+ .swiper-container-horizontal>.swiper-pagination-bullets,
+ .swiper-pagination-custom,
+ .swiper-pagination-fraction{bottom:10%;left:0;width:100%}
  .swiper-pagination-bullets-dynamic{overflow:hidden;font-size:0}
  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transform:scale(.33);position:relative}
  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{transform:scale(1)}

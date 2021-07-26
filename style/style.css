@@ -3,7 +3,7 @@
   --c-base-dark: rgb(50, 52, 60);
   --c-base-light: #ffffff;
   --c-light: #eee;
-  --c-accent: rgb(247, 184, 57);
+  --c-accent: rgb(237, 130, 49);
   --c-light-grey: #bbb;
   --c-dark: #717171;
 
@@ -877,7 +877,11 @@ cursor: pointer;
 }
 
 /* галерея*/
-.photo {
+/* #gallary{
+  padding-bottom: 100px;
+} */
+
+/* .photo {
   float: left;
   width: 100%;
   padding: 10px;
@@ -928,7 +932,7 @@ cursor: pointer;
   color: #999999;
   text-align: center;
   margin-top: 20px;
-}
+} */
 
 /* review */
 .swiper-container {
@@ -1132,17 +1136,18 @@ cursor: pointer;
 
   /* gallary */
 
-  .content-gallary {
+
+  /* .content-gallary {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
-  .photo {
+  /* .photo {
     width: 45%;
     float: left;
     text-align: center;
-  }
+  } */
 
   /* MODAL*/
 
@@ -1473,7 +1478,6 @@ cursor: pointer;
     height: 700px;
     width: 600px;
     margin-top: 70px;
-    margin-bottom: 150px;
   }
 
   /* как найти */
@@ -1503,14 +1507,13 @@ cursor: pointer;
     display: inline-flex;
   }
 
-  #all-contacts > h1 {
+  /* #all-contacts > h1 {
     text-align: center;
-    /* font-family: var(--font-main); */
     text-align: center;
     color: var(--txt-c-base-dark);
     margin: 40px;
     font-size: 50px;
-  }
+  } */
 
   .contacts {
     width: 40%;
