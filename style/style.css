@@ -200,7 +200,7 @@ cursor: pointer;
 .mobile-menu-items a:hover,
 .mobile-menu-contacts a:hover {
   color: var(--txt-c-base-dark);
-  text-shadow: rgb(184, 18, 184) 1px 0 10px;
+  text-shadow: var(--c-accent) 1px 0 10px;
   font-size: 140%;
 }
 
@@ -415,6 +415,7 @@ cursor: pointer;
   position: fixed;
   z-index: 7;
   background-color: var(--txt-c-base-light);
+  overflow-y: auto;
 }
 
 /* .modal-slider-content {
@@ -439,12 +440,14 @@ cursor: pointer;
   height: 100%;
   background: url("../foto/slider/IMG_5207\ —\ копия.JPG") center;
   opacity: 0.3;
+  background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
 }
 .modal-slider__container__content-txt >p {
   max-height: 100%;
   max-width: 100%;
+  font-size: 13px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -679,15 +682,15 @@ overflow-y: auto;
 }
 .group-img{
   height: auto;
-  max-width:  62%;
+  max-width:  60%;
 }
 .leftimg{
   float:left; 
-  margin: 7px 7px 7px 0;
+  margin: 5px 5px 0px 5px;
 }
  .rightimg  {
   float: right; 
-  margin: 7px 0 7px 7px;
+  margin: 5px 0 0 5px;
   }
 
 /* стоимость абоабонов*/
