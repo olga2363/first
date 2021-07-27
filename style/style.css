@@ -151,7 +151,7 @@ cursor: pointer;
   height: 100%;
   width: 100%;
   display: block;
-  background-color: rgba(102, 99, 102, 0.9);
+  background-color: var(--c-base-light);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
@@ -663,18 +663,32 @@ cursor: pointer;
   margin: 0 auto;
 }
 
-
-/* modal personal */
-.modal-group-content,
-.modal-personal-content {
-  background-color: var(--c-base-light);
-  height: 100%;
-  width: 100%;
-  font-size: 30px;
-  top: 20%;
-  text-align: center;
-  padding-top: 70px;
+.modal-personal,
+.modal-group{
+background-color: var(--c-base-light);
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100%;
+z-index: 9;
+overflow-y: auto;
 }
+
+.modal-group__content{
+  text-align: justify;
+}
+.group-img{
+  height: auto;
+  max-width:  62%;
+}
+.leftimg{
+  float:left; 
+  margin: 7px 7px 7px 0;
+}
+ .rightimg  {
+  float: right; 
+  margin: 7px 0 7px 7px;
+  }
 
 /* стоимость абоабонов*/
 
@@ -773,21 +787,28 @@ cursor: pointer;
 .timetable__info__content{
   max-width: 100%;
   max-height: 100%;
-}
-.timetable__info__text {
-  box-sizing: border-box;
+   /* box-sizing: border-box;
   font-size: 16px;
-   /* width: 308px;  */
-  /*padding-left: 150px;*/
-  font-family: sans-serif;
-  margin-bottom: 0;
   text-align: center;
   padding-left: 115px;
   text-indent: 20px;
   text-align: center;
   padding-top: 48px;
+  margin-bottom: 0px; */
 }
-
+ .timetable__info__text,
+ .timetable__info__contact  {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: center;
+  padding-left: 115px;
+  text-indent: 20px;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 0px;
+}
+/* 
 .timetable__info__contact {
   box-sizing: border-box;
   font-size: 16px;
@@ -795,18 +816,7 @@ cursor: pointer;
   text-indent: 20px;
   text-align: center;
   padding-top: 48px;
-  /* width: 308px; */
-  /* padding-left: 150px;
-  text-indent: 20px;
-  text-align: center;
-  padding-top: 4px; */
-}
-
-/* .timetable__info__contact > a:hover,
-.timetable__info__contact > a:hover {
-  cursor: pointer;
-  text-shadow: var(--c-accent) 1px 0 5px;
-  font-size: 110%;
+  margin-bottom: 0px;
 } */
 
 .carousel {
