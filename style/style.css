@@ -440,10 +440,11 @@ cursor: pointer;
   height: 100%;
   background: url("../foto/slider/IMG_5207\ —\ копия.JPG") center;
   opacity: 0.3;
-  background-repeat: repeat-y;
+  /* background-repeat: repeat-y; */
   background-size: cover;
   background-position: center;
 }
+
 .modal-slider__container__content-txt >p {
   max-height: 100%;
   max-width: 100%;
@@ -487,6 +488,10 @@ cursor: pointer;
   padding-bottom: 25px;
   text-align: center;
   font-weight: 400;
+}
+
+.split-group{
+margin-bottom: 40px;
 }
 
 /*Описание тренировок*/
@@ -1014,11 +1019,11 @@ overflow-y: auto;
 .social-networks > a:hover,
 .contacts > section > a:hover {
   color: var(--txt-c-base-light);
-  text-shadow: rgb(184, 18, 184) 1px 0 10px;
+  text-shadow: var(--c-accent) 1px 0 10px;
 }
 
 .social-networks > a:active {
-  color: rgb(184, 18, 184);
+  color: var(--c-accent);
 }
 
 .contacts > section {
@@ -1571,10 +1576,28 @@ overflow-y: auto;
     position: fixed;
     z-index: 7;
   }
-  .modal-slider-content {
+
+  .bg{
+  position: absolute;
+  z-index: -1;
+  /* padding: 1px;
+  width: 100%;
+  height: 100%; */
+  background-image: url("../foto/slider/IMG_5207.JPG");
+  opacity: 0.3;
+  background-repeat: repeat-y;
+  /* background-size: cover;
+  background-position: center; */
+}
+.modal-slider__container__content-txt > p {
+    font-size: 20px;
+  }
+
+
+    /*  .modal-slider-content {
     background-image: url("../foto/slider/IMG_5207.JPG");
     opacity: 1;
-    /* background-size: cover;
+ background-size: cover;
         background-position: center;
         opacity: 0.9;
         background-repeat: no-repeat; */
@@ -1586,83 +1609,4 @@ overflow-y: auto;
     right: 0;
   }
 
-  /* 
-        .modal-slider-container> img{
-        height: 100%;
-        width: 100%;
-        border: 5px solid #eee;
-        box-sizing: border-box; 
-        border-radius: 20px;
-        object-position: 0;
-        }
-    
-        .modal-slider-container> span{
-        text-align: justify;
-        text-shadow: none;
-        position: fixed;
-        color: var(--txt-c-dark-grey);
-        text-indent: 20px;
-        } 
-    
-        .content-modal-win-text{
-        width: 35%;
-        height: auto;
-        top: 5%;
-        right: 0;
-        left: 11.5%;
-        transition: 0.5s;
-        opacity: 1;
-        }
-    
-        .content-modal-win-text-two{
-        width: 34%;
-        height: auto;
-        right: 0;
-        top: 19%;
-        left: 11.5%;
-        }
-        .content-modal-win-text-three {
-        width: 30%;
-        height: auto;
-        right: 0;
-        top: 40%;
-        left: 11.5%;
-        }
-    
-        .content-modal-win-text-four{
-        width: 25%;
-        height: auto;
-        right: 0;
-        left: 11.5%;
-        top: 58%;
-        }
-
-        .content-modal-win-text-five{
-        width: 37%;
-        height: auto;
-        text-indent: 20px;
-        right: 11.5%;
-        top: 5%;
-        }
-        
-        .content-modal-win-text-six{
-        width: 36%;
-        height: auto;
-        right: 11.5%;
-        top: 19%;
-        }
-    
-        .content-modal-win-text-seven{
-        height: auto;
-        width: 35%;
-        right: 11.5%;
-        top: 37%;
-        }
-        
-        .content-modal-win-text-eight{
-        height: auto;
-        width: 32%;
-        right: 11.5%;
-        top: 51%;
-        } */
 }
