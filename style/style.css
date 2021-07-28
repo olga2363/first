@@ -682,6 +682,7 @@ z-index: 9;
 overflow-y: auto;
 }
 
+.modal-personal__content,
 .modal-group__content{
   text-align: justify;
 }
