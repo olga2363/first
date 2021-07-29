@@ -47,6 +47,7 @@ cursor: pointer;
   color: var(--txt-c-base-light);
   padding: 5px;
 }
+
 .logo:active,
 .logo:hover,
 .header__icons a:active,
@@ -59,6 +60,7 @@ cursor: pointer;
   background: none;
   color: var(--txt-c-base-light);
 }
+
 .header__btn{
   border: none;
   background-color: inherit;
@@ -140,10 +142,10 @@ cursor: pointer;
 }
 
 /* modals */
-
 .body-scroll-disable {
   overflow: hidden;
 }
+
 .modalwin {
   position: fixed;
   top: 0;
@@ -189,11 +191,10 @@ cursor: pointer;
 
 .mobile-menu-items a,
 .mobile-menu-icons a,
-.mobile-menu-contacts a {
+.mobile-menu-contacts a{
   text-decoration: none;
   padding: 10px; 
   color: var(--txt-c-base-dark);
-
 }
 
 .mobile-menu-icons a:hover,
@@ -207,7 +208,7 @@ cursor: pointer;
 .mobile-menu i:hover,
 .mobile-menu i:active {
   color: var(--txt-c-base-light);
-  text-shadow: rgb(184, 18, 184) 1px 0 10px;
+  text-shadow: var(--c-accent) 1px 0 10px;
 }
 
 .casper {
@@ -275,26 +276,6 @@ cursor: pointer;
   outline-style: none;
 }
 
-/* Caption text 
-.text {
-  color:var(--txt-c-white);
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}*/
-
-/* Number text (1/3 etc)
-.numbertext {
-  color: var(--txt-c-white);
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
-
 .dot {
   cursor: pointer;
   height: 15px;
@@ -306,7 +287,8 @@ cursor: pointer;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: var(--c-accent);
 }
 
@@ -392,7 +374,6 @@ cursor: pointer;
   line-height: 1;
 }
 
-/*модальное окно*/
 /* modal-menu */
 .modal-mobile-content {
   background-color: var(--c-base-light);
@@ -418,34 +399,19 @@ cursor: pointer;
   overflow-y: auto;
 }
 
-/* .modal-slider-content {
-  width: 100%;
-  height: 100%;
-  background-image: url("../foto/slider/IMG_5207\ —\ копия.JPG"); */
-  /* background-size: cover;
-  background-position: center;
-  opacity: 0.2;
-  z-index: 1;
-  background-repeat: no-repeat; */
- /* position: relative;
-  z-index: 1;
- padding: 1px; 
-}*/
-
 .modal-slider__bg{
   position: absolute;
   z-index: -1;
   padding: 1px;
   width: 100%;
   height: 100%;
-  background: url("../foto/slider/IMG_5207\ —\ копия.JPG") center;
+  background: url("../foto/slider/madal-slider1.JPG") center;
   opacity: 0.3;
-  /* background-repeat: repeat-y; */
   background-size: cover;
   background-position: center;
 }
 
-.modal-slider__container__content-txt >p {
+.modal-slider__content-txt{
   max-height: 100%;
   max-width: 100%;
   font-size: 13px;
@@ -456,19 +422,9 @@ cursor: pointer;
   z-index: -1;
   opacity: 1;
   color: black;
-  padding-top: 5%;
-}
-
-
-/* .modal-slider__container__content {
+  padding-top: 14%;
   text-align: justify;
-  text-shadow: none;
-  color: var(--c-base-light);
-  text-shadow: 1px 2px 10px var(--txt-c-base-dark);
-  text-indent: 20px;
-  padding: 10px;
-  top: 5%;
-} */
+}
 
 .primery-title {
   text-align: center;
@@ -509,7 +465,6 @@ margin-bottom: 40px;
   width: 100%;
   margin-top: 25px;
   padding: 0 5px 0 5px;
-  /* padding: 0 55px 0px 55px 0; */
   color: var(--txt-c-base-dark);
   cursor: pointer;
   border-bottom: 3px solid silver;
@@ -518,25 +473,25 @@ margin-bottom: 40px;
   word-spacing: 1.5px;
 }
 
-.trainings {
+.description-trainings__info{
   padding-left: 5px;
   font-size: 17px;
   text-align: justify;
 }
 
-.opisanie-foto-shpagat {
+.description-trainings__shpagat {
   height: 215px;
   float: left;
   margin: 0;
 }
 
-.opisanie-foto-strethcing {
+.description-trainings__strethcing {
   width: 130px;
   float: right;
   margin: 7px 0 7px 9px;
 }
 
-.opisanie {
+.description-trainings__content {
   border-bottom: 2px solid rgb(50, 52, 60);
   font-size: 15px;
   letter-spacing: 1px;
@@ -550,7 +505,6 @@ margin-bottom: 40px;
 
 .hide:checked + label {
   width: 100%;
-  /* padding: 5px 20px; */
   cursor: pointer;
   font-size: 20px;
   letter-spacing: 1.5px;
@@ -612,18 +566,12 @@ margin-bottom: 40px;
   color: var(--c-base-dark);
   float: right;
   font-size: 25px;
-  /* font-weight: bold; */
   height: 16px;
-  /* line-height: 16px; */
-  /* margin-left: 10px; */
   margin-right: 10px;
-  /* margin-top: 10px; */
   text-align: center;
-  /* line-height: initial; */
   width: 25px;
   height: 25px;
   padding: 0 5px 0 5px;
-  /* padding: 0 15px; */
 }
 
 .hide:checked + label:before {
@@ -650,7 +598,6 @@ margin-bottom: 40px;
 }
 
 .trainings-my-video-btn:hover {
-  /* outline: 1px solid white; */
   color: var(--txt-c-base-light);
   background-color: var(--txt-c-base-dark);
 }
@@ -671,20 +618,22 @@ margin-bottom: 40px;
   margin: 0 auto;
 }
 
-.modal-personal,
-.modal-group{
-background-color: var(--c-base-light);
-display: flex;
-flex-direction: column;
-justify-content: center;
-height: 100%;
-z-index: 9;
-overflow-y: auto;
-}
+  .modal-personal,
+  .modal-group{
+  background-color: var(--c-base-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  z-index: 9;
+  overflow-y: auto;
+  }
 
-.modal-personal__content,
-.modal-group__content{
+  .modal-personal__content-text,
+  .modal-group__content-text,
+  .modal-personal__content-text-left{
   text-align: justify;
+  max-width: 80%;
 }
 
 .modal-slider__bg-personal{
@@ -693,7 +642,7 @@ overflow-y: auto;
   padding: 1px;
   width: 100%;
   height: 100%;
-  background: url("../foto/format/IMG_2305-1.jpg") center;
+  background: url("../foto/format/personal.jpg") center;
   opacity: 0.3;
   background-repeat: no-repeat;
   background-size: cover;
@@ -706,28 +655,14 @@ overflow-y: auto;
   padding: 1px;
   width: 100%;
   height: 100%;
-  background: url("../foto/format/IMG_2170.jpg") center;
+  background: url("../foto/format/group.jpg") center;
   opacity: 0.3;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.group-img{
-  height: auto;
-  max-width:  60%;
-}
-.leftimg{
-  float:left; 
-  margin: 5px 5px 0px 5px;
-}
- .rightimg  {
-  float: right; 
-  margin: 5px 0 0 5px;
-  }
-
 /* стоимость абоабонов*/
-
 .wrap-personal,
 .wrap-split,
 .wrap-group {
@@ -735,7 +670,6 @@ overflow-y: auto;
   border-radius: 20px;
   border: 7px solid #eee;
   font-size: 17px;
-  /* font-family: sans-serif; */
   margin-bottom: 70px;
   letter-spacing: 1.5px;
   word-spacing: 1.5px;
@@ -768,7 +702,6 @@ overflow-y: auto;
   letter-spacing: 1.5px;
   word-spacing: 1.5px;
   font-size: 17px;
-  /* font-family: sans-serif; */
 }
 
 .dot-item > p {
@@ -779,7 +712,6 @@ overflow-y: auto;
   word-spacing: 1.5px;
   margin-top: 5px;
   margin-bottom: 5px;
-  /* font-family: sans-serif; */
   color: var(--txt-c-base-dark);
 }
 
@@ -791,7 +723,6 @@ overflow-y: auto;
   word-spacing: 1.5px;
   margin-top: 5px;
   margin-bottom: 5px;
-  /* font-family: sans-serif; */
   line-height: 45px;
 }
 
@@ -804,36 +735,19 @@ overflow-y: auto;
 }
 
 /*расписане тренировок*/
-
-/* .timetable__foto {
-  display: flex;
-  height: 400px;
-  width: auto;
-  margin-left: -30px;
-  position: absolute;
-  margin-top: 18px;
-} */
-
 .timetable__info{
- background-image: url("../foto/image7-removebg.png");
+ background-image: url("../foto/timetable/timetable1.png");
   background-repeat: no-repeat;
   background-size: auto 95%;
   background-position: left;
 }
-.timetable__info__content{
+.timetable__info-content{
   max-width: 100%;
   max-height: 100%;
-   /* box-sizing: border-box;
-  font-size: 16px;
-  text-align: center;
-  padding-left: 115px;
-  text-indent: 20px;
-  text-align: center;
-  padding-top: 48px;
-  margin-bottom: 0px; */
 }
- .timetable__info__text,
- .timetable__info__contact  {
+
+ .timetable__info-text,
+ .timetable__info-contact  {
   box-sizing: border-box;
   font-size: 16px;
   margin-bottom: 0;
@@ -844,16 +758,6 @@ overflow-y: auto;
   padding-top: 40px;
   margin-bottom: 0px;
 }
-/* 
-.timetable__info__contact {
-  box-sizing: border-box;
-  font-size: 16px;
-  padding-left: 115px;
-  text-indent: 20px;
-  text-align: center;
-  padding-top: 48px;
-  margin-bottom: 0px;
-} */
 
 .carousel {
   height: 700px;
@@ -890,7 +794,7 @@ overflow-y: auto;
   outline-style: none;
 }
 
-.format__training-home {
+.format__training-personal{
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -904,7 +808,7 @@ overflow-y: auto;
  
 }
 
-.format__training-studio {
+.format__training-group{
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -924,7 +828,6 @@ overflow-y: auto;
 }
 
 .content-modal-win-personal > span {
-  /* font-family: var(--font-txt); */
   text-align: justify;
   top: 40px;
   width: 900px;
@@ -940,62 +843,6 @@ overflow-y: auto;
 }
 
 /* галерея*/
-/* #gallary{
-  padding-bottom: 100px;
-} */
-
-/* .photo {
-  float: left;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.photo > a > img {
-  display: block;
-  height: 300px;
-  max-width: 300px;
-  padding: 10px;
-  border-radius: 20px;
-  border: 0.2px solid #eee;
-  background-color: #eee;
-  box-sizing: border-box;
-}
-
-.photo > a:hover {
-  opacity: 0.5;
-}
-
-.photo > a {
-  display: block;
-  position: relative;
-}
-
-.photo > a:after {
-  width: 52px;
-  height: 35px;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  visibility: hidden;
-}
-
-.photo:hover > a:after {
-  visibility: visible;
-}
-
-.photo figcaption {
- font-family: "Open Sans", sans-serif; 
-  color: #999999;
-  text-align: center;
-  margin-top: 20px;
-} */
 
 /* review */
 .swiper-container {
@@ -1005,7 +852,6 @@ overflow-y: auto;
 
 .swiper-wrapper > img {
   max-width: 100%;
-  /* height: auto; */
   width: auto;
   min-height: 300px;
   object-fit: contain;
@@ -1068,7 +914,7 @@ overflow-y: auto;
   height: 300px;
 }
 
-@media only screen and (min-width: 640px) {
+  @media only screen and (min-width: 640px) {
   .container {
     min-width: 640px;
   }
@@ -1111,7 +957,6 @@ overflow-y: auto;
 
   .mobile-menu-container {
     height: 70%;
-    /* justify-content: space-between; */
     margin: 0;
   }
 
@@ -1153,12 +998,7 @@ overflow-y: auto;
 
   .slide-text-two {
     font-family: var(--font-txt);
-    /* width: 50%;
-        height: auto; */
     font-size: 20px;
-    /* position: absolute;
-        top: 26%;
-        left: 15%; */
     line-height: 1.3;
   }
 
@@ -1167,11 +1007,11 @@ overflow-y: auto;
   }
 
   .slide-text-three {
-    font-size: 20px;
-    text-align: right;
-    top: 19%;
-    left: 3%;
-    line-height: 1.3;
+  font-size: 20px;
+  text-align: right;
+  top: 19%;
+  left: 3%;
+  line-height: 1.3;
   }
 
   .slide-text-four {
@@ -1189,21 +1029,6 @@ overflow-y: auto;
     text-align: center;
     width: 60%;
   }
-
-  /* gallary */
-
-
-  /* .content-gallary {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  } */
-
-  /* .photo {
-    width: 45%;
-    float: left;
-    text-align: center;
-  } */
 
   /* MODAL*/
 
@@ -1267,12 +1092,6 @@ overflow-y: auto;
     justify-content: space-around;
   }
 
-  /* .icons{
-        display: flex;
-        width: 100px;
-        align-items: center;
-        justify-content: space-around;
-        } */
 
   .menu-items {
     flex-direction: row;
@@ -1346,9 +1165,7 @@ overflow-y: auto;
   }
 
   /*Описание тренировок*/
-
-
-  .description-of-trainings-content {
+  .description-trainings {
     text-align: start;
     width: 100%;
     color: var(--txt-c-base-dark);
@@ -1357,7 +1174,7 @@ overflow-y: auto;
     font-size: 50px;
   }
 
-  .trainings {
+  .description-trainings__info{
     justify-content: space-around;
     width: 58%;
     margin: 52px 17px 20px 27px;
@@ -1365,20 +1182,19 @@ overflow-y: auto;
     line-height: 2;
   }
 
-  .opisanie-foto-shpagat {
+  .description-trainings__shpagat {
     height: 280px;
     width: auto;
     float: left;
     margin: 7px 20px 7px 0;
   }
-  .opisanie-foto-strethcing {
+  .description-trainings__strethcing {
     height: 280px;
     width: auto;
     float: right;
-    /* margin: 7px 20px 7px 0; */
-  }
+    }
 
-  .opisanie {
+  .description-trainings__content{
     display: grid;
     grid-template-columns: 100%;
   }
@@ -1395,14 +1211,14 @@ overflow-y: auto;
     width: 100%;
   }
 
-  .timetable__foto {
+  /* .timetable__foto {
     width: auto;
     margin-left: -20px;
     position: absolute;
     height: 650px;
-  }
+  } */
 
-  .timetable__info__text {
+  .timetable__info-text {
     text-indent: 20px;
     width: 55%;
     margin-top: 115px;
@@ -1414,10 +1230,9 @@ overflow-y: auto;
     font-size: 25px;
     line-height: 55px;
     text-align: justify;
-    /* font-family: Arial, Helvetica, sans-serif; */
-  }
+    }
 
-  .timetable__info__contact {
+  .timetable__info-contact {
     text-indent: 20px;
     width: 55%;
     margin-top: 120px;
@@ -1429,8 +1244,7 @@ overflow-y: auto;
     font-size: 25px;
     line-height: 55px;
     text-align: justify;
-    /* font-family: Arial, Helvetica, sans-serif; */
-  }
+    }
 
   /* формат тренировок */
   .format__training-foto {
@@ -1460,7 +1274,6 @@ overflow-y: auto;
   }
 
   .price {
-    /* font-family: var(--font-main); */
     color: rgb(50, 52, 60);
     margin: 25px;
     margin-top: 100px;
@@ -1475,7 +1288,6 @@ overflow-y: auto;
   }
 
   .wrap-personal {
-    /* border-style: ridge; */
     height: 300px;
     width: 400px;
   }
@@ -1501,7 +1313,6 @@ overflow-y: auto;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
     font-size: 25px;
-    /* font-family: sans-serif; */
     justify-content: center;
   }
 
@@ -1513,7 +1324,6 @@ overflow-y: auto;
     word-spacing: 1.5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    /* font-family: sans-serif; */
     line-height: 45px;
   }
 
@@ -1563,14 +1373,6 @@ overflow-y: auto;
     display: inline-flex;
   }
 
-  /* #all-contacts > h1 {
-    text-align: center;
-    text-align: center;
-    color: var(--txt-c-base-dark);
-    margin: 40px;
-    font-size: 50px;
-  } */
-
   .contacts {
     width: 40%;
     height: 150px;
@@ -1592,8 +1394,6 @@ overflow-y: auto;
   }
 
   /* MODAL*/
-
-  /* modal slaider */
   .modal-slider {
     height: 100%;
     width: 100%;
@@ -1605,36 +1405,30 @@ overflow-y: auto;
     z-index: 7;
   }
 
+  .modal-personal__content-text,
+  .modal-group__content-text{
+  font-size: 25px;
+  }
+  
+  .modal-personal__content-text-left{
+   font-size: 25px;
+   text-align: left;
+  }
+
   .modal-slider__bg{
   position: absolute;
   z-index: -1;
-  /* padding: 1px;
-  width: 100%;
-  height: 100%; */
-  background-image: url("../foto/slider/IMG_5207.JPG");
+  background-image: url("../foto/slider/madal-slider1.JPG");
   opacity: 0.3;
   background-repeat: repeat-y;
-  /* background-size: cover;
-  background-position: center; */
-}
-.modal-slider__container__content-txt > p {
-    font-size: 20px;
   }
 
-
-    /*  .modal-slider-content {
-    background-image: url("../foto/slider/IMG_5207.JPG");
-    opacity: 1;
- background-size: cover;
-        background-position: center;
-        opacity: 0.9;
-        background-repeat: no-repeat; */
-  }
-
-  .modal-slider__container__content-txt{
-    max-width: 75%;
+  .modal-slider__content-txt{
+    max-width: 80%;
     margin: 0 auto;
     right: 0;
+    font-size: 20px;
+    padding-top: 8%;
   }
 
 }
