@@ -691,7 +691,7 @@ margin-bottom: 40px;
   text-align: center;
 }
 
-.one-trainings {
+.price-content__one-trainings {
   border-style: ridge;
   border-width: 5px;
   border-radius: 20px;
@@ -861,7 +861,7 @@ margin-bottom: 40px;
 
 /*контакты*/
 
-.all-contacts-wrap {
+.all-contacts__wrap {
   height: auto;
   width: 100%;
   color: #eee;
@@ -1023,7 +1023,7 @@ margin-bottom: 40px;
     height: 335px;
   }
 
-  .abon {
+  .price-content__abon {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1253,7 +1253,7 @@ margin-bottom: 40px;
   }
 
   /* price */
-  .abon {
+  .price-content__abon {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -1303,7 +1303,7 @@ margin-bottom: 40px;
     width: 400px;
   }
 
-  .one-trainings {
+  .price-content__one-trainings {
     border-width: 5px;
     border-radius: 20px;
     border: 7px solid #eee;
@@ -1365,7 +1365,7 @@ margin-bottom: 40px;
     width: 100%;
   }
 
-  .all-contacts-wrap {
+  .all-contacts__wrap {
     height: 550px;
     width: 100%;
     color: #eee;
