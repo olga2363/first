@@ -92,6 +92,11 @@ cursor: pointer;
   color: var(--txt-c-base-light);
   background-color: var(--c-base-dark);
 }
+.header__inner> a{
+  color: var(--txt-c-base-light);
+  font-family: var(--font-main);
+  text-decoration: none;
+}
 
 .header__nav ul {
   display: flex;
@@ -168,7 +173,7 @@ cursor: pointer;
 .modal-close-btn {
   font-size: 18px;
   position: absolute;
-  top: 5%;
+  top: 7%;
   right: 10%;
   cursor: pointer;
 }
@@ -445,10 +450,19 @@ cursor: pointer;
   text-align: center;
   font-weight: 400;
 }
-
-.split-group{
-margin-bottom: 40px;
+.swiper-title{
+  text-align: right;
+  padding-right: 25px;
+  padding-top: 10px;
 }
+.swiper-slide>p{
+padding: 25px;
+text-align: justify;
+}
+
+/* .split-group{
+margin-bottom: 40px;
+} */
 
 /*Описание тренировок*/
 #all-trainings {
@@ -625,7 +639,7 @@ margin-bottom: 40px;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  z-index: 9;
+  /* z-index: 9; */
   overflow-y: auto;
   }
 
@@ -642,7 +656,7 @@ margin-bottom: 40px;
   padding: 1px;
   width: 100%;
   height: 100%;
-  background: url("../foto//format/personal1.jpg") center;
+  background: url("../foto/format/personal1.jpeg") center;
   opacity: 0.3;
   background-repeat: no-repeat;
   background-size: cover;
@@ -655,7 +669,7 @@ margin-bottom: 40px;
   padding: 1px;
   width: 100%;
   height: 100%;
-  background: url("../foto/format/group1.jpg") center;
+  background: url("../foto/format/group1.jpeg") center;
   opacity: 0.3;
   background-repeat: no-repeat;
   background-size: cover;
