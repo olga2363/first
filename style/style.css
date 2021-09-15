@@ -469,6 +469,9 @@ margin-bottom: 40px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
+.note{
+  font-size: 12px;
+}
 
 .hide,
 .hide + label ~ div {
@@ -493,7 +496,8 @@ margin-bottom: 40px;
   text-align: justify;
 }
 
-.description-trainings__shpagat {
+.description-trainings__shpagat,
+.description-trainings__mfr {
   height: 215px;
   float: left;
   margin: 0;
@@ -504,6 +508,7 @@ margin-bottom: 40px;
   float: right;
   margin: 7px 0 7px 9px;
 }
+
 
 .description-trainings__content {
   border-bottom: 2px solid rgb(50, 52, 60);
@@ -678,7 +683,7 @@ margin-bottom: 40px;
 
 /* стоимость абоабонов*/
 .wrap-personal,
-.wrap-split,
+/* .wrap-split, */
 .wrap-group {
   border-width: 5px;
   border-radius: 20px;
@@ -704,10 +709,12 @@ margin-bottom: 40px;
 .foto-trail {
   text-align: center;
 }
-
+.price-content__info{
+  display: flex;
+}
 .price-content__one-trainings {
-  border-style: ridge;
-  border-width: 5px;
+  /* border-style: ridge;
+  border-width: 5px; */
   border-radius: 20px;
   border: 7px solid #eee;
   box-sizing: border-box;
@@ -1267,6 +1274,7 @@ margin-bottom: 40px;
   }
 
   /* price */
+
   .price-content__abon {
     display: flex;
     justify-content: space-around;
@@ -1296,8 +1304,9 @@ margin-bottom: 40px;
   }
 
   .wrap-personal,
-  .wrap-split,
+  /* .wrap-split, */
   .wrap-group {
+    margin: 5px;
     border: 7px solid #eee;
   }
 
@@ -1306,19 +1315,21 @@ margin-bottom: 40px;
     width: 400px;
   }
 
-  .wrap-split {
+  /* .wrap-split {
     height: 300px;
     width: 400px;
-  }
+  } */
 
-  .wrap-group {
+  /* .wrap-group {
     margin: 0px 10px 0px 10px;
     height: 392px;
     width: 400px;
-  }
+  } */
 
   .price-content__one-trainings {
-    border-width: 5px;
+    /* border-width: 5px; */
+    margin: 5px;
+    padding-top: 20px;
     border-radius: 20px;
     border: 7px solid #eee;
     box-sizing: border-box;
