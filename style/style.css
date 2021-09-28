@@ -129,7 +129,6 @@ cursor: pointer;
 }
 
 .button-me {
-  /* font-family: var(--font-txt); */
   background-color: inherit;
   color: var(--txt-c-base-light);
   border-radius: 10px;
@@ -237,19 +236,6 @@ cursor: pointer;
   position: relative;
   height: auto;
   object-fit: contain;
-  object-position: 0;
-}
-
-.slide {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-  object-fit: center;
   object-position: 0;
 }
 
@@ -445,7 +431,7 @@ cursor: pointer;
   font-size: 20px;
   letter-spacing: 1.5px;
   word-spacing: 1.5px;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 25px;
   text-align: center;
   font-weight: 400;
@@ -455,14 +441,6 @@ cursor: pointer;
   padding-right: 25px;
   padding-top: 10px;
 }
-.swiper-slide>p{
-padding: 25px;
-text-align: justify;
-}
-
-/* .split-group{
-margin-bottom: 40px;
-} */
 
 /*Описание тренировок*/
 #all-trainings {
@@ -471,6 +449,7 @@ margin-bottom: 40px;
 }
 .note{
   font-size: 12px;
+  text-align: justify;
 }
 
 .hide,
@@ -503,7 +482,8 @@ margin-bottom: 40px;
   margin: 0;
 }
 
-.description-trainings__strethcing {
+.description-trainings__strethcing,
+.description-trainings__full{
   width: 130px;
   float: right;
   margin: 7px 0 7px 9px;
@@ -601,42 +581,6 @@ margin-bottom: 40px;
   color: var(--txt-c-base-light);
 }
 
-/* video-btn */
-.trainings-my-video-btn {
-  border: 2px solid var(--c-base-dark);
-  color: var(--txt-c-base-light);
-  background: transparent;
-  padding: 5px 40px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: var(--animation-transition);
-  border-radius: 10px;
-  background: rgba(12, 12, 11, 0.4);
-}
-
-.trainings-my-video-btn:hover {
-  color: var(--txt-c-base-light);
-  background-color: var(--txt-c-base-dark);
-}
-
-.my-video-container {
-  background-color: var(--c-base-light);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  z-index: 9;
-}
-
- .my-video-container > video {
-  max-width: 100%;
-  max-height: 90%;
-  padding: 50px;
-  margin: 0 auto;
-}
-
   .modal-personal,
   .modal-group{
   background-color: var(--c-base-light);
@@ -709,17 +653,12 @@ margin-bottom: 40px;
 .foto-trail {
   text-align: center;
 }
-.price-content__info{
-  display: flex;
-}
+
 .price-content__one-trainings {
-  /* border-style: ridge;
-  border-width: 5px; */
   border-radius: 20px;
   border: 7px solid #eee;
   box-sizing: border-box;
   text-align: center;
-  margin-bottom: 70px;
   letter-spacing: 1.5px;
   word-spacing: 1.5px;
   font-size: 17px;
@@ -864,21 +803,38 @@ margin-bottom: 40px;
 }
 
 /* галерея*/
-
+  
+ 
+  
+  .swiper-pagination{
+    bottom: 0;
+  }
+  
 /* review */
-.swiper-container {
+.gallary-container{
+  max-height: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.gallary-container{
+max-width: 100%;
+} 
+.swiper-slide>p{
+  /* padding: 25px; */
+  text-align: left;
+  font-style: italic;
+  }
+
+.gallary__img{
   max-width: 100%;
-  height: 100%;
+  text-align: center;
+  object-fit: cover;
 }
 
-.swiper-wrapper > img {
-  max-width: 100%;
-  width: auto;
-  min-height: 300px;
-  object-fit: contain;
-  object-position: center;
-  margin-bottom: 20px;
+.review-name{
+text-align: right;
 }
+
 
 /*контакты*/
 
@@ -935,7 +891,7 @@ margin-bottom: 40px;
   height: 300px;
 }
 
-  @media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) {
   .container {
     min-width: 640px;
   }
@@ -1232,13 +1188,6 @@ margin-bottom: 40px;
     width: 100%;
   }
 
-  /* .timetable__foto {
-    width: auto;
-    margin-left: -20px;
-    position: absolute;
-    height: 650px;
-  } */
-
   .timetable__info-text {
     text-indent: 20px;
     width: 55%;
@@ -1304,7 +1253,6 @@ margin-bottom: 40px;
   }
 
   .wrap-personal,
-  /* .wrap-split, */
   .wrap-group {
     margin: 5px;
     border: 7px solid #eee;
@@ -1314,33 +1262,25 @@ margin-bottom: 40px;
     height: 300px;
     width: 400px;
   }
-
-  /* .wrap-split {
-    height: 300px;
-    width: 400px;
-  } */
-
-  /* .wrap-group {
-    margin: 0px 10px 0px 10px;
-    height: 392px;
-    width: 400px;
-  } */
-
-  .price-content__one-trainings {
-    /* border-width: 5px; */
-    margin: 5px;
-    padding-top: 20px;
+  .price-content__info{    
+    display: flex;
+  }
+  .price-content__one-trainings,
+  .review__info {
+    padding-top: 55px;
     border-radius: 20px;
     border: 7px solid #eee;
     box-sizing: border-box;
     text-align: center;
-    margin-bottom: 70px;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
     font-size: 25px;
     justify-content: center;
   }
 
+.price-content__one-trainings>p{
+  padding: 25px 100px;
+}
   .price-abon > p {
     text-align: left;
     box-sizing: border-box;
@@ -1363,14 +1303,27 @@ margin-bottom: 40px;
     line-height: 45px;
   }
 
+  .swiper-wrapper{
+    max-height: 600px;
+    padding-bottom: 35px;
+  }
+  
   .swiper-container {
-    margin-left: 100px;
-    margin-right: 100px;
-    height: 700px;
-    width: 600px;
+    height: auto;
+    max-width: 70%;
     margin-top: 70px;
   }
+  .swiper-slide>p {
+    padding: 25px 75px;
+  }
 
+  .gallary-container{
+    max-height: 850px;
+    /* max-width: 100%; */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
   /* как найти */
   #our-map {
     height: 500px;
