@@ -656,6 +656,7 @@ cursor: pointer;
 
 .price-content__one-trainings {
   border-radius: 20px;
+  margin: 5px;
   border: 7px solid #eee;
   box-sizing: border-box;
   text-align: center;
