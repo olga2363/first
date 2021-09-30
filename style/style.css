@@ -42,20 +42,23 @@ cursor: pointer;
 }
 
 .logo,
-.header__icons a {
+.header__icons a,
+.networks a{
   text-decoration: none;
   color: var(--txt-c-base-light);
   padding: 5px;
 }
-
-.logo:active,
-.logo:hover,
+.header__inner> a,
+.header__inner> a:active,
+.header__inner> a:hover,
 .header__icons a:active,
 .header__icons a:hover,
 .header__icons a:focus,
 .header__btn:hover,
 .header__btn:active,
-.header__btn:focus {
+.header__btn:focus,
+.networks a:active,
+.networks a:focus {
   text-decoration: none;
   background: none;
   color: var(--txt-c-base-light);
@@ -91,11 +94,6 @@ cursor: pointer;
   justify-content: space-around;
   color: var(--txt-c-base-light);
   background-color: var(--c-base-dark);
-}
-.header__inner> a{
-  color: var(--txt-c-base-light);
-  font-family: var(--font-main);
-  text-decoration: none;
 }
 
 .header__nav ul {
@@ -838,6 +836,9 @@ text-align: right;
 
 
 /*контакты*/
+.contacts> ul{
+  list-style: none;
+}
 
 .all-contacts__wrap {
   height: auto;
@@ -854,22 +855,60 @@ text-align: right;
   font-size: 20px;
   font-family: var(--font-txt);
 }
+.footer__form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+input{
+  text-align: center;
+}
+/* .footer__title{
 
-.social-networks {
-  color: #eee;
-  font-size: 17px;
-  display: inline-flex;
+} */
+.accent__btn{
+border: 1px transparent;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+color: var(--txt-c-base-light);
+cursor: pointer;
+display: inline-block;
+text-decoration: none;
+margin-bottom: 5px;
+padding: 5px 20px;
+-webkit-animation: glowing 1300ms infinite;
+-moz-animation: glowing 1300ms infinite;
+-o-animation: glowing 1300ms infinite;
+animation: glowing 1300ms infinite;
+}
+@-webkit-keyframes glowing {
+0% { background-color: rgb(202, 91, 5); -webkit-box-shadow: 0 0 3px rgb(202, 91, 5); }
+50% { background-color: rgb(237, 130, 49); -webkit-box-shadow: 0 0 15px rgb(237, 130, 49); }
+100% { background-color: rgb(202, 91, 5); -webkit-box-shadow: 0 0 3px rgb(202, 91, 5); }
+}
+@keyframes glowing {
+0% { background-color: rgb(202, 91, 5); box-shadow: 0 0 3px rgb(202, 91, 5); }
+50% { background-color: rgb(237, 130, 49); box-shadow: 0 0 15px rgb(237, 130, 49); }
+100% { background-color: rgb(202, 91, 5); box-shadow: 0 0 3px rgb(202, 91, 5); }
+}
+.accent__btn:hover{
+  color: var(--txt-c-base-light);
 }
 
-.social-networks > a {
-  padding: 20px;
+.footer__contact{
+  margin: 0;
+  padding: 20px 0;
+}
+
+.networks {
+  display: inline-flex;
+  padding: 20px 20px 20px 0;
   font-size: 30px;
-  color: var(--txt-c-white);
+  color: var(--txt-c-base-light);
   text-align: justify;
 }
 
-.social-networks > a:hover,
-.contacts > section > a:hover {
+.networks:hover{
   color: var(--txt-c-base-light);
   text-shadow: var(--c-accent) 1px 0 10px;
 }
