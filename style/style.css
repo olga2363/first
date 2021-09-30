@@ -470,7 +470,7 @@ cursor: pointer;
 .description-trainings__info{
   padding-left: 5px;
   font-size: 17px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .description-trainings__shpagat,
@@ -863,9 +863,7 @@ text-align: right;
 input{
   text-align: center;
 }
-/* .footer__title{
 
-} */
 .accent__btn{
 border: 1px transparent;
 -webkit-border-radius: 20px;
@@ -875,7 +873,8 @@ cursor: pointer;
 display: inline-block;
 text-decoration: none;
 margin-bottom: 5px;
-padding: 5px 20px;
+padding: 5px 15px;
+font-size: 17px;
 -webkit-animation: glowing 1300ms infinite;
 -moz-animation: glowing 1300ms infinite;
 -o-animation: glowing 1300ms infinite;
@@ -1379,15 +1378,18 @@ animation: glowing 1300ms infinite;
   }
 
   #all-contacts {
-    height: 650px;
+    /* height: 650px; */
     width: 100%;
   }
+.footer_bg{
+  background-color: var(--c-base-dark);
+}
 
   .all-contacts__wrap {
-    height: 550px;
+    /* height: 550px; */
     width: 100%;
     color: #eee;
-    background-color: var(--c-base-dark);
+    /* background-color: var(--c-base-dark); */
     display: inline-flex;
   }
 
