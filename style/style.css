@@ -470,7 +470,7 @@ cursor: pointer;
 .description-trainings__info{
   padding-left: 5px;
   font-size: 17px;
-  /* text-align: justify; */
+  text-align: center;
 }
 
 .description-trainings__shpagat,
@@ -871,6 +871,8 @@ border-radius: 20px;
 color: var(--txt-c-base-light);
 cursor: pointer;
 display: inline-block;
+align-items: center;
+text-indent: 0;
 text-decoration: none;
 margin-bottom: 5px;
 padding: 5px 15px;
