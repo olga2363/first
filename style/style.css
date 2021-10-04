@@ -837,10 +837,13 @@ text-align: right;
 
 /*контакты*/
 .contacts> ul{
-  list-style: none;
+  color: var(--c-accent);
+}
+.contact{
+  color: var(--txt-c-base-light);
 }
 
-.all-contacts__wrap {
+.all-contacts-wrap {
   height: auto;
   width: 100%;
   color: #eee;
@@ -855,13 +858,18 @@ text-align: right;
   font-size: 20px;
   font-family: var(--font-txt);
 }
-.footer__form{
+.footer-form{
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 20px;
+  align-items: center;
 }
+
+
 input{
   text-align: center;
+  width: 100%;
 }
 
 .accent__btn{
@@ -898,7 +906,7 @@ animation: glowing 1300ms infinite;
 
 .footer__contact{
   margin: 0;
-  padding: 20px 0;
+  padding: 0 20px;
 }
 
 .networks {
@@ -913,7 +921,9 @@ animation: glowing 1300ms infinite;
   color: var(--txt-c-base-light);
   text-shadow: var(--c-accent) 1px 0 10px;
 }
-
+.social-networks {
+  padding: 0;
+}
 .social-networks > a:active {
   color: var(--c-accent);
 }
@@ -1387,7 +1397,7 @@ animation: glowing 1300ms infinite;
   background-color: var(--c-base-dark);
 }
 
-  .all-contacts__wrap {
+  .all-contacts-wrap {
     /* height: 550px; */
     width: 100%;
     color: #eee;
@@ -1399,7 +1409,7 @@ animation: glowing 1300ms infinite;
     width: 40%;
     height: 150px;
     text-align: justify;
-    margin: 40px 40px 40px 150px;
+    margin: 0px 40px 40px 150px;
     font-size: 20px;
     font-family: var(--font-txt);
   }
@@ -1409,6 +1419,7 @@ animation: glowing 1300ms infinite;
     margin-right: 40px;
     font-size: 20px;
     display: inline-flex;
+    padding: 0;
   }
 
   .social-networks > a {
