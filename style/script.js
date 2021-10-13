@@ -30,7 +30,7 @@ btnPrev.addEventListener("click", function () {
     slider.style.left = -viewSlide * viewport + "px";
 });
 
-/*модальное окно*/
+/*модальное окно
 function showModalWin() {
 
     var darkLayer = document.createElement('div'); // слой затемнения
@@ -46,4 +46,5 @@ function showModalWin() {
         return false;
     };
 }
+*/
 

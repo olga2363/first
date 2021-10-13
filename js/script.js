@@ -40,9 +40,14 @@ buttons.forEach((btn, index) => {
 });
 
 
-modalCloseBtns.forEach(btn => {
-    btn.addEventListener('click', hideModal);
-})
+// modalCloseBtns.forEach(btn => {
+//     btn.addEventListener('click', hideModal);
+// })
+
+
+// modalCloseBtns.forEach(btn {
+//     btn.addEventListener('click', hideModal);
+// })
 
 function enableCloseModalOnBgdClick() {
     if (modalContainers.length) {

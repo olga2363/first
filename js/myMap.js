@@ -1,14 +1,22 @@
-function myMap() 
-							{
-								var mapCanvas = document.getElementById("map");
-								var mapOptions = {
-									center: new google.maps.LatLng(50.427951414043925, 30.533590807133987), 
-									zoom: 15};
-								
-								var map = new google.maps.Map(mapCanvas, mapOptions);
-								var marker = new google.maps.Marker({
-									position: mapOptions,
-									map: myMap,
-									icon:  "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
-									title: "Мы здесь"});
-							}
+const mapsDot = document.querySelectorAll(".contact-btn");
+const tabItem = document.querySelectorAll(".map");
+
+mapsDot.forEach(
+    function (item){
+        item.addEventListener ("click", function(){
+            let currentBtn = item;
+            let tabId = currentBtn.getAttribute("data-tab");
+	    	let currentTab = document.querySelector(tabId);
+            
+            mapsDot.forEach (function (item) {
+                item.classList.remove('active-map');
+            });
+            
+            tabItem.forEach (function (item) {
+                item.classList.remove('active-map');
+            });
+
+            currentBtn.classList.add('active-map')
+            currentTab.classList.add('active-map');
+        });
+    });

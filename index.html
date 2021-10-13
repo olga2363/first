@@ -83,7 +83,7 @@
 	<span id="logo">
 		<div class="slideshow-container">
 			<div class="mySlides fade">
-				<div class="slide"><img src="foto/slider/slider1.jpg" class="swiper-slide"
+				<div class="slide"><img src="foto/slider/slider1.png" class="swiper-slide"
 						alt="фото девушки сидя на шпагате"></div>
 				<div class="slide-text-one" data-aos="fade-left">
 					<p>"Пространство для тренировок, в&nbsp;котором твоё тело станет гибче и&nbsp;сильнее."</p>
@@ -398,12 +398,17 @@
 							<!-- </span> -->
 							</button>
 						</form>
-						<h5>Адрес:</h5>
-						<ul class="footer__contact">
-							<li><p class="contact">м. Печерск, ул. Коновальца, 36Д, бизнес центр "Волна"</p></li>
-							<li><p class="contact">м. Дружбы народов, бул. Дружбы народов, 32а</p></li>
-						</ul>
+						<div>
+							<h5>Адрес:</h5>
+							<ul>
+								<li class="contact-btn active-map" type="button" data-tab="#tab1">м. Печерск, ул. Коновальца, 36Д, бизнес центр "Волна"</li>
+								<li class="contact-btn" type="button" data-tab="#tab2">м. Дружбы народов, бул. Дружбы народов, 32а</li>
+							</ul>
+							<!-- <button class="contact-btn active-map" type="button" data-tab="#tab1"> м. Печерск, ул. Коновальца, 36Д, бизнес центр "Волна"</button>
+							<button class="contact-btn" type="button" data-tab="#tab2">м. Дружбы народов, бул. Дружбы народов, 32а</button> -->
+						</div>
 						<a href="tel:+380953377856" style="color: white;">+38 (095) 337 78 56 - Анна</a>
+						<br>
 						<ul class="social-networks">
 							<li class="networks"><a href="https://www.facebook.com/stretch.house.7" target="blank"><i
 								class="fab fa-facebook-square"></i></a></li>
@@ -413,31 +418,11 @@
 								class="fab fa-telegram"></i></a></li>
 						</ul>
 					</div>
-
-					<div id="our-map">
-						<div id="map">
-						</div>
-						<div id="myMap"></div>
-						<script>
-							function myMap() {
-								var mapCanvas = document.getElementById("map");
-								var mapOptions = {
-									center: new google.maps.LatLng(50.427951414043925, 30.533590807133987),
-									zoom: 15
-								};
-
-								var map = new google.maps.Map(mapCanvas, mapOptions);
-								var marker = new google.maps.Marker({
-									position: mapOptions,
-									map: myMap,
-									icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
-									title: "Мы здесь"
-								});
-							}
-						</script>
-						<script
-							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCQKTmCqmmfvo_fFCQlJMhmpQsvVr7mjE&callback=myMap"></script>
+					<div class="maps-content">
+						<div id="tab1" class="map active-map"><iframe class="maps-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1270.9266345548367!2d30.5335797!3d50.4252054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf11a1516e25%3A0x3038967554e54e1!2z0JLQvtC70L3QsA!5e0!3m2!1sru!2sua!4v1633965683952!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </div>	
+						<div id="tab2" class="map"><iframe class="maps-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.2640404908825!2d30.544397315730148!3d50.41755197947081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf6bf1e14a7f%3A0x520a716af6ae043a!2z0LHRg9C7LiDQlNGA0YPQttCx0Ysg0J3QsNGA0L7QtNC-0LIsIDMy0JAsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1633965741869!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>						
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -549,14 +534,15 @@
 
 
 	</div>
-
+	
+	<script src="js/myMap.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/aos.js"></script>
 	<script src="js/animation-on-scroll.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.js"></script>
-	<script src="js/myMap.js"></script>
+	
 
 
 </body>
