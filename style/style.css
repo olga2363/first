@@ -932,8 +932,11 @@ animation: glowing 1300ms infinite;
   color: var(--txt-c-base-light);
   border: none;
 }
-/* .contacts > section {
-  padding: 14px;
+.address{
+  list-style: inside;
+}
+/* .contact-btn{
+  list-style: inside;
 } */
 
 /* карта */
