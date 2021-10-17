@@ -8,15 +8,21 @@ mapsDot.forEach(
             let tabId = currentBtn.getAttribute("data-tab");
 	    	let currentTab = document.querySelector(tabId);
             
-            mapsDot.forEach (function (item) {
-                item.classList.remove('active-map');
-            });
+            if (! currentBtn.classList.contains('active'))
+            {
+                mapsDot.forEach (function (item) {
+                    item.classList.remove('active-map');
+                });
+                
+                tabItem.forEach (function (item) {
+                    item.classList.remove('active-map');
+                });
+    
+                currentBtn.classList.add('active-map')
+                currentTab.classList.add('active-map');
+            }
             
-            tabItem.forEach (function (item) {
-                item.classList.remove('active-map');
-            });
-
-            currentBtn.classList.add('active-map')
-            currentTab.classList.add('active-map');
         });
     });
+
+    // document.querySelector('.contact-btn').click();
