@@ -625,7 +625,6 @@ cursor: pointer;
 
 /* стоимость абоабонов*/
 .wrap-personal,
-/* .wrap-split, */
 .wrap-group {
   border-width: 5px;
   border-radius: 20px;
@@ -802,9 +801,6 @@ cursor: pointer;
 }
 
 /* галерея*/
-  
- 
-  
   .swiper-pagination{
     bottom: 0;
   }
@@ -923,30 +919,23 @@ animation: glowing 1300ms infinite;
 }
 .social-networks {
   padding: 0;
+  text-align: center;
 }
 .social-networks > a:active {
   color: var(--c-accent);
 }
-.contact-btn{
-  background: transparent;
-  color: var(--txt-c-base-light);
-  border: none;
+.contact-btn span{
+  font-size: 15px;
 }
-.address{
-  list-style: inside;
-}
-/* .contact-btn{
-  list-style: inside;
-} */
 
 /* карта */
-
 .map {
   display: none;
 }
 
 .maps-content{
   display: flex;
+  padding-left: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -957,9 +946,22 @@ animation: glowing 1300ms infinite;
   padding-top: 10px;
 }
 
-.active-map{
+.active-map,
+.active-map p{
 display: block;
 color: var(--c-accent);
+}
+
+.tel-number{
+  color: var(--c-base-light);
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+.tel-number:active,
+.tel-number:hover
+{
+  color: var(--c-base-light);
 }
 
 
@@ -1111,18 +1113,18 @@ color: var(--c-accent);
     width: 100%;
   }
 
-.primery-title {
-  font-size: 50px;
-  margin-top: 150px;
-}
-.secondary-title{
-  font-size: 28px;
-}
+  .primery-title {
+    font-size: 50px;
+    margin-top: 150px;
+  }
+  .secondary-title{
+    font-size: 28px;
+  }
 
-.stretching-body a {
-  color: var(--c-light);
-  text-decoration: none;
-}
+  .stretching-body a {
+    color: var(--c-light);
+    text-decoration: none;
+  }
 
   .stretching-body a:hover {
     color: var(--c-light);
@@ -1371,7 +1373,7 @@ color: var(--c-accent);
   }
 
   .dot-item > p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 45px;
   }
 
@@ -1397,54 +1399,53 @@ color: var(--c-accent);
   }
   
   /* как найти */
-  /* #our-map {
-    height: 500px;
-    width: 100%;
-    margin: 35px;
-    right: 100px;
-    margin-top: 20px;
-  }
-
-  #map {
-    width: 100%;
-    height: 500px;
-  } */
 
   #all-contacts {
-    /* height: 650px; */
     width: 100%;
   }
-.footer_bg{
-  background-color: var(--c-base-dark);
-}
+  .footer_bg{
+    background-color: var(--c-base-dark);
+  }
 
   .all-contacts-wrap {
-    /* height: 550px; */
     width: 100%;
     color: #eee;
-    /* background-color: var(--c-base-dark); */
-    display: inline-flex;
+  }
+  .footer-form{
+    width: 40%;
+    margin: 0 auto;
+  }
+  .address{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .address-title{
+    text-align: center;
+    margin-top: 15px;
   }
 
   .contacts {
-    width: 40%;
-    /* height: 150px; */
     text-align: justify;
-    margin: 0px 40px 0 150px;
+    margin: 0px auto;
     font-size: 20px;
     font-family: var(--font-txt);
   }
 
   .social-networks {
     color: #eee;
-    margin-right: 40px;
     font-size: 20px;
-    display: inline-flex;
+    text-align: center;
     padding: 0;
   }
 
   .social-networks > a {
     font-size: 50px;
+  }
+  .networks{
+    padding: 0 20px;
   }
 
   /* MODAL*/
